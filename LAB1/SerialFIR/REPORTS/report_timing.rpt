@@ -1,0 +1,42 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Top_Serial_FIR
+Version: J-2014.09
+Date   : Mon Nov 11 12:46:13 2019
+****************************************
+
+Operating Conditions: NCCOM   Library: tcbn90gtc
+Wire Load Model Mode: top
+
+  Startpoint: F1/present_state_reg[1]
+              (rising edge-triggered flip-flop)
+  Endpoint: conv_sum[23]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Top_Serial_FIR     TSMC8K_Lowk_Conservative
+                                           tcbn90gtc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  F1/present_state_reg[1]/CP (DFCNQD1)                    0.00       0.00 r
+  F1/present_state_reg[1]/Q (DFCNQD1)                     0.15       0.15 r
+  F1/U4/ZN (INVD1)                                        0.04       0.19 f
+  F1/U3/ZN (NR2D2)                                        0.24       0.43 r
+  F1/dav (FSM)                                            0.00       0.43 r
+  U34/Z (AN2D0)                                           0.07       0.50 r
+  conv_sum[23] (out)                                      0.00       0.50 r
+  data arrival time                                                  0.50
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
