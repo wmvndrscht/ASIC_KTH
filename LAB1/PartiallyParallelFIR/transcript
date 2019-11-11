@@ -12,18 +12,132 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# Project file /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/SOURCE/PartiallyParallelFIR.mpf was not found.
+# Project file /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/lab2_gate.mpf was not found.
 # Unable to open project.
 # Loading project ppfir
-# can't read "Startup(-L)": no such element in array
-# Load canceled
+# Window cannot be closed because the modal window "Add file to Project" is still open.
 # Compile of main.v was successful.
 # Compile of misc.vhd was successful.
 # Compile of myPackage.vhd was successful.
 # Compile of TB_PartiallyParallel_FIR.vhd was successful with warnings.
 # Compile of tcbn90g.v was successful.
 # 5 compiles, 0 failed with no errors.
-# can't read "Startup(-L)": no such element in array
-# Load canceled
-# can't read "Startup(-L)": no such element in array
-# Load canceled
+vsim work.tb_partiallyparallel
+# vsim work.tb_partiallyparallel 
+# Start time: 18:55:05 on Nov 11,2019
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(271): (vopt-2685) [TFMPC] - Too few port connections for '\data_reg[12][9] '.  Expected 6, found 5.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(271): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(273): (vopt-2685) [TFMPC] - Too few port connections for '\data_reg[12][8] '.  Expected 6, found 5.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(273): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(275): (vopt-2685) [TFMPC] - Too few port connections for '\data_reg[12][7] '.  Expected 6, found 5.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(275): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(277): (vopt-2685) [TFMPC] - Too few port connections for '\data_reg[12][6] '.  Expected 6, found 5.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(277): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(279): (vopt-2685) [TFMPC] - Too few port connections for '\data_reg[12][5] '.  Expected 6, found 5.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(279): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(281): (vopt-2685) [TFMPC] - Too few port connections for '\data_reg[12][4] '.  Expected 6, found 5.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(281): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(283): (vopt-2685) [TFMPC] - Too few port connections for '\data_reg[12][3] '.  Expected 6, found 5.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(283): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(285): (vopt-2685) [TFMPC] - Too few port connections for '\data_reg[12][2] '.  Expected 6, found 5.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(285): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(287): (vopt-2685) [TFMPC] - Too few port connections for '\data_reg[12][1] '.  Expected 6, found 5.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(287): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(289): (vopt-2685) [TFMPC] - Too few port connections for '\data_reg[12][0] '.  Expected 6, found 5.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(289): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(291): (vopt-2685) [TFMPC] - Too few port connections for '\data_reg[11][9] '.  Expected 6, found 5.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(291): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(293): (vopt-2685) [TFMPC] - Too few port connections for '\data_reg[11][8] '.  Expected 6, found 5.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(293): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(295): (vopt-2685) [TFMPC] - Too few port connections for '\data_reg[11][7] '.  Expected 6, found 5.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(295): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(297): (vopt-2685) [TFMPC] - Too few port connections for '\data_reg[11][6] '.  Expected 6, found 5.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(297): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(299): (vopt-2685) [TFMPC] - Too few port connections for '\data_reg[11][5] '.  Expected 6, found 5.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(299): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(301): (vopt-2685) [TFMPC] - Too few port connections for '\data_reg[11][4] '.  Expected 6, found 5.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(301): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(303): (vopt-2685) [TFMPC] - Too few port connections for '\data_reg[11][3] '.  Expected 6, found 5.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(303): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(305): (vopt-2685) [TFMPC] - Too few port connections for '\data_reg[11][2] '.  Expected 6, found 5.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(305): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(307): (vopt-2685) [TFMPC] - Too few port connections for '\data_reg[11][1] '.  Expected 6, found 5.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(307): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(309): (vopt-2685) [TFMPC] - Too few port connections for '\data_reg[11][0] '.  Expected 6, found 5.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(309): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(927): (vopt-2685) [TFMPC] - Too few port connections for 'add_16'.  Expected 5, found 4.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(927): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(1224): (vopt-2685) [TFMPC] - Too few port connections for 'add_16'.  Expected 5, found 4.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(1224): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(1305): (vopt-2685) [TFMPC] - Too few port connections for 'add_47'.  Expected 5, found 4.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB1/PartiallyParallelFIR/db/main.v(1305): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.misc(body)
+# Loading work.types_consts
+# Loading work.tb_partiallyparallel(behavior)#1
+# Loading work.Top_PartiallyParallel_FIR(fast)
+# Loading work.EDFCNQD1(fast)
+# Loading work.EDFCND1(fast)
+# Loading work.AN2D0(fast)
+# Loading work.BUFFD0(fast)
+# Loading work.INVD1(fast)
+# Loading work.NR2D1(fast)
+# Loading work.AOI222D0(fast)
+# Loading work.ND4D1(fast)
+# Loading work.AOI221D0(fast)
+# Loading work.OAI22D0(fast)
+# Loading work.ND2D1(fast)
+# Loading work.AN3D1(fast)
+# Loading work.INR3D0(fast)
+# Loading work.INR2D1(fast)
+# Loading work.AN4D1(fast)
+# Loading work.OR2D1(fast)
+# Loading work.ND3D1(fast)
+# Loading work.OAI31D1(fast)
+# Loading work.XNR2D1(fast)
+# Loading work.AOI21D0(fast)
+# Loading work.OAI211D0(fast)
+# Loading work.CMPE32D1(fast)
+# Loading work.CMPE22D1(fast)
+# Loading work.CMPE42D1(fast)
+# Loading work.XOR2D1(fast)
+# Loading work.NR2D0(fast)
+# Loading work.XNR2D0(fast)
+# Loading work.AO21D0(fast)
+# Loading work.OAI21D0(fast)
+# Loading work.OAI32D0(fast)
+# Loading work.ND2D0(fast)
+# Loading work.OA22D0(fast)
+# Loading work.XOR3D1(fast)
+# Loading work.DFCNQD1(fast)
+# Loading work.NR4D0(fast)
+# Loading work.NR3D0(fast)
+# Loading work.AO33D1(fast)
+# Loading work.MOAI22D1(fast)
+# Loading work.OAI32D1(fast)
+# Loading work.IIND4D1(fast)
+# Loading work.AO211D1(fast)
+add wave -position insertpoint  \
+sim:/tb_partiallyparallel/clk \
+sim:/tb_partiallyparallel/rst_n \
+sim:/tb_partiallyparallel/sample_clk \
+sim:/tb_partiallyparallel/sample \
+sim:/tb_partiallyparallel/conv_sum \
+sim:/tb_partiallyparallel/dav
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Causality operation skipped due to absence of debug database file
+# End time: 18:56:43 on Nov 11,2019, Elapsed time: 0:01:38
+# Errors: 0, Warnings: 47

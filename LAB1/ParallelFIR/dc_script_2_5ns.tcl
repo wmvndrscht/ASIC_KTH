@@ -24,7 +24,7 @@ elaborate Top_Parallel_FIR -lib WORK
 set_wire_load_mode top
 set_wire_load_selection_group WireAreaLowkCon
 set_operating_conditions -library tcbn90gtc NCCOM
-create_clock -name "clk" -period 2.5 -waveform { 0 2.5 } { clk }
+create_clock -name "clk" -period 2.5 -waveform { 0 1.25 } { clk }
 set_false_path -setup -reset_path -from { rst_n }
 set_false_path -hold -reset_path -from { rst_n }
 #######Compile Option############
