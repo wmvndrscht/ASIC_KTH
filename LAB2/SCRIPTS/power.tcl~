@@ -1,0 +1,8 @@
+read_file -format verilog /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v
+elaborate FIR_Toplevel -lib WORK -param "width = 4, filter_taps = 5"
+set_wire_load_mode segmented
+set_wire_load_model -name TSMC8K_Lowk_Conservative
+report_saif -input /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/activity.saif -instance_name tb_fir
+report power
+
+

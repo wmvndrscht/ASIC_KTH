@@ -1,0 +1,618 @@
+# //  Questa Sim
+# //  Version 10.5c_4 linux Nov 30 2016
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Project file /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/lab2.mpf was not found.
+# Unable to open project.
+# Loading project lab2
+# Compile of main.v was successful.
+# Compile of misc.vhd was successful.
+# Compile of tb_FIR.vhd was successful.
+# Compile of tcbn90g.v was successful.
+# 4 compiles, 0 failed with no errors.
+vsim work.tb_fir -sdftyp /tb_fir/u1=/afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/delays.sdf
+# vsim work.tb_fir -sdftyp /tb_fir/u1=/afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/delays.sdf 
+# Start time: 17:51:22 on Nov 13,2019
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.math_real(body)
+# Loading work.tb_fir(tb_fir_behavioural)#1
+# Loading work.FIR_Toplevel_4_5(fast)
+# Loading work.OR4D1(fast)
+# Loading work.IAO21D1(fast)
+# Loading work.LHD1(fast)
+# Loading work.LNCND1(fast)
+# Loading work.OAI21D0(fast)
+# Loading work.INVD1(fast)
+# Loading work.NR2D1(fast)
+# Loading work.OAI31D1(fast)
+# Loading work.ND3D1(fast)
+# Loading work.ND2D1(fast)
+# Loading work.NR3D0(fast)
+# Loading work.ND4D1(fast)
+# Loading work.AOI21D0(fast)
+# Loading work.AOI22D0(fast)
+# Loading work.AOI222D0(fast)
+# Loading work.AN2D0(fast)
+# Loading work.CMPE22D1(fast)
+# Loading work.CKXOR2D0(fast)
+# Loading work.AO21D0(fast)
+# Loading work.IOA21D0(fast)
+# Loading work.NR2D0(fast)
+# Loading work.XNR2D0(fast)
+# Loading work.ND2D0(fast)
+# Loading work.OR2D0(fast)
+# Loading work.DFSND1(fast)
+# Loading work.EDFCNQD1(fast)
+# Loading work.DFCNQD1(fast)
+# Loading work.BUFFD0(fast)
+# Loading work.NR4D0(fast)
+# Loading work.AO22D0(fast)
+# Loading work.INR4D0(fast)
+# Loading work.IND2D1(fast)
+# Loading work.CMPE32D1(fast)
+# Loading work.XOR3D1(fast)
+# Loading work.XOR2D1(fast)
+# Loading work.OAI22D0(fast)
+# Loading work.IND4D1(fast)
+# Loading work.XNR2D1(fast)
+# Loading instances from /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/delays.sdf
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(15): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[0][3]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(16): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[0][2]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(17): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[0][1]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(18): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[0][0]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(19): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[1][3]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(20): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[1][2]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(21): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[1][1]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(22): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[1][0]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(23): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[2][3]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(24): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[2][2]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(25): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[2][1]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(26): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[2][0]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(27): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[3][3]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(28): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[3][2]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(29): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[3][1]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(30): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[3][0]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(31): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][3]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(32): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][2]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(33): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][1]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(34): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][0]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(35): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\outp_reg[3]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(36): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\outp_reg[2]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(37): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\outp_reg[1]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(38): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\outp_reg[0]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(252): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/rws_wire_reg File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(765): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/dav_wire_reg File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# Loading timing data from /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/delays.sdf
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\outp_wire_reg[2] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[3] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[4] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[5] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[1] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[11] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[10] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[7] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[9] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[13] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[6] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[8] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[12] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\coef_addr_wire_reg[1] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\coef_addr_wire_reg[2] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[30] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[29] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\accumulator_reg[2] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\accumulator_reg[4] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[31] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[30] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[29] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[28] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[27] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[26] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[25] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[24] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[23] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[22] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[21] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[20] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[19] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[18] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[17] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[16] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[15] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[14] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[13] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[12] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[11] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[10] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[9] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[8] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[7] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[6] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[5] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[0] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[1] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[3] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[4] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[2] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[0] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[1] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[2] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[11] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[10] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[17] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[13] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[7] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[3] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[14] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[8] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[4] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[15] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[9] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[5] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[16] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[12] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[6] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[28] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[24] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[20] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[29] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[25] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[21] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[18] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[30] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[26] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[22] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[19] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[27] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[23] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[31] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\adrs_wire_reg[2] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\adrs_wire_reg[1] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\adrs_wire_reg[0] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\sample_write_reg[0] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\sample_write_reg[1] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\sample_write_reg[2] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\sample_write_reg[3] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5231): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/rws_wire_reg
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(8774): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][0] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(8774): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][1] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(8774): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][2] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(8774): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][3] 
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tb_FIR.vhd
+# Load canceled
+add wave -position insertpoint sim:/tb_fir/*
+run 2ns
+# Causality operation skipped due to absence of debug database file
+run 2ns
+run 20ns
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.FIR_Toplevel_4_5(fast)
+# Loading work.OR4D1(fast)
+# Loading work.IAO21D1(fast)
+# Loading work.LHD1(fast)
+# Loading work.LNCND1(fast)
+# Loading work.OAI21D0(fast)
+# Loading work.INVD1(fast)
+# Loading work.NR2D1(fast)
+# Loading work.OAI31D1(fast)
+# Loading work.ND3D1(fast)
+# Loading work.ND2D1(fast)
+# Loading work.NR3D0(fast)
+# Loading work.ND4D1(fast)
+# Loading work.AOI21D0(fast)
+# Loading work.AOI22D0(fast)
+# Loading work.AOI222D0(fast)
+# Loading work.AN2D0(fast)
+# Loading work.CMPE22D1(fast)
+# Loading work.CKXOR2D0(fast)
+# Loading work.AO21D0(fast)
+# Loading work.IOA21D0(fast)
+# Loading work.NR2D0(fast)
+# Loading work.XNR2D0(fast)
+# Loading work.ND2D0(fast)
+# Loading work.OR2D0(fast)
+# Loading work.DFSND1(fast)
+# Loading work.EDFCNQD1(fast)
+# Loading work.DFCNQD1(fast)
+# Loading work.BUFFD0(fast)
+# Loading work.NR4D0(fast)
+# Loading work.AO22D0(fast)
+# Loading work.INR4D0(fast)
+# Loading work.IND2D1(fast)
+# Loading work.CMPE32D1(fast)
+# Loading work.XOR3D1(fast)
+# Loading work.XOR2D1(fast)
+# Loading work.OAI22D0(fast)
+# Loading work.IND4D1(fast)
+# Loading work.XNR2D1(fast)
+# Loading instances from /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/delays.sdf
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(15): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[0][3]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(16): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[0][2]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(17): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[0][1]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(18): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[0][0]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(19): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[1][3]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(20): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[1][2]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(21): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[1][1]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(22): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[1][0]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(23): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[2][3]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(24): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[2][2]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(25): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[2][1]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(26): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[2][0]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(27): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[3][3]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(28): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[3][2]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(29): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[3][1]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(30): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[3][0]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(31): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][3]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(32): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][2]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(33): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][1]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(34): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][0]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(35): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\outp_reg[3]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(36): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\outp_reg[2]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(37): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\outp_reg[1]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(38): [TFMPC] - Too few port connections. Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\outp_reg[0]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(252): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/rws_wire_reg File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v(765): [TFMPC] - Too few port connections. Expected 5, found 4.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/dav_wire_reg File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v
+# Loading timing data from /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/delays.sdf
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\outp_wire_reg[2] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[3] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[4] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[5] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[1] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[11] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[10] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[7] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[9] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[13] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[6] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[8] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[12] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\coef_addr_wire_reg[1] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\coef_addr_wire_reg[2] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[30] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[29] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\accumulator_reg[2] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\accumulator_reg[4] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[31] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[30] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[29] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[28] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[27] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[26] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[25] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[24] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[23] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[22] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[21] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[20] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[19] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[18] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[17] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[16] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[15] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[14] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[13] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[12] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[11] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[10] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[9] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[8] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[7] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[6] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[5] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[0] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[1] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[3] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[4] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[2] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[0] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[1] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[2] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[11] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[10] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[17] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[13] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[7] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[3] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[14] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[8] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[4] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[15] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[9] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[5] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[16] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[12] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[6] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[28] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[24] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[20] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[29] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[25] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[21] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[18] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[30] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[26] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[22] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[19] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[27] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[23] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[31] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\adrs_wire_reg[2] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\adrs_wire_reg[1] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\adrs_wire_reg[0] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\sample_write_reg[0] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\sample_write_reg[1] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\sample_write_reg[2] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\sample_write_reg[3] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(5231): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/rws_wire_reg
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(8774): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][0] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(8774): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][1] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(8774): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][2] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tcbn90g.v(8774): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][3] 
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/tb_FIR.vhd
+run 18ns
+vcd file activity.vcd
+vcd add -r tb_fir/*
+run 200ns
+quit -f
+# End time: 18:00:02 on Nov 13,2019, Elapsed time: 0:08:40
+# Errors: 1, Warnings: 1

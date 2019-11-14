@@ -7,7 +7,7 @@ Report : timing
         -max_paths 1
 Design : Top_PartiallyParallel_FIR
 Version: J-2014.09
-Date   : Mon Nov 11 18:52:52 2019
+Date   : Wed Nov 13 14:47:41 2019
 ****************************************
 
 Operating Conditions: NCCOM   Library: tcbn90gtc

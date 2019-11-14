@@ -55,7 +55,7 @@ begin
     VARIABLE a_real: real;
     VARIABLE count :INTEGER:=0;
     --Addition of this variable
-    VARIABLE number_of_samples:INTEGER:=10;
+    VARIABLE number_of_samples:INTEGER:=1000;
 
   begin
 

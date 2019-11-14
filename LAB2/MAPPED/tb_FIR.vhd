@@ -8,7 +8,7 @@ entity tb_FIR is
 end entity tb_FIR;
 
 architecture tb_FIR_behavioural of tb_FIR is
-  constant clk_period : time     := 10 ns;
+  constant clk_period : time     := 5 ns;
   constant nr_of_taps : positive := 5;
   constant width      : positive := 4;
 
