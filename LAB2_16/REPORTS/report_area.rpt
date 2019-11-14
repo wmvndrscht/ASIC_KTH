@@ -3,7 +3,7 @@
 Report : area
 Design : FIR_Toplevel_5
 Version: J-2014.09
-Date   : Thu Nov 14 13:30:21 2019
+Date   : Thu Nov 14 13:44:30 2019
 ****************************************
 
 Library(s) Used:
@@ -19,12 +19,12 @@ Number of macros/black boxes:               0
 Number of buf/inv:                          0
 Number of references:                       3
 
-Combinational area:               6940.684842
-Buf/Inv area:                      130.636799
+Combinational area:               6969.715244
+Buf/Inv area:                      143.539199
 Noncombinational area:            4122.316858
 Macro/Black Box area:                0.000000
 Net Interconnect area:      undefined  (Wire load has zero net area)
 
-Total cell area:                 11063.001700
+Total cell area:                 11092.032102
 Total area:                 undefined
 1

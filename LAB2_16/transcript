@@ -13,10 +13,213 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading project lab2_16
+# Compile of main.v was successful.
+# Compile of misc.vhd was successful.
+# Compile of tcbn90g.v was successful.
+# Compile of tb_FIR.vhd was successful.
+# 4 compiles, 0 failed with no errors.
 vsim work.tb_fir -sdftyp /tb_fir/u1=/afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/delays.sdf
 # vsim work.tb_fir -sdftyp /tb_fir/u1=/afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/delays.sdf 
-# Start time: 13:19:21 on Nov 14,2019
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 13:36:39 on Nov 14,2019
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(26): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[0][15] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(26): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(27): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[0][14] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(27): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(28): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[0][13] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(28): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(29): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[0][12] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(29): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(30): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[0][11] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(30): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(31): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[0][10] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(31): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(32): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[0][9] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(32): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(33): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[0][8] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(33): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(34): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[0][7] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(34): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(35): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[0][6] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(35): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(36): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[0][5] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(36): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(37): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[0][4] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(37): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(38): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[0][3] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(38): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(39): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[0][2] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(39): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(40): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[0][1] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(40): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(41): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[0][0] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(41): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(42): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[1][15] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(42): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(43): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[1][14] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(43): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(44): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[1][13] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(44): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(45): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[1][12] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(45): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(46): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[1][11] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(46): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(47): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[1][10] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(47): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(48): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[1][9] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(49): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[1][8] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(49): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(50): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[1][7] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(50): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(51): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[1][6] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(51): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(52): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[1][5] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(52): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(53): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[1][4] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(53): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(54): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[1][3] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(54): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(55): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[1][2] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(55): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(56): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[1][1] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(56): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(57): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[1][0] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(57): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(58): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[2][15] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(58): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(59): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[2][14] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(59): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(60): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[2][13] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(60): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(61): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[2][12] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(61): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(62): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[2][11] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(62): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(63): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[2][10] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(63): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(64): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[2][9] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(64): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(65): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[2][8] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(65): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(66): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[2][7] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(66): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(67): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[2][6] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(67): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(68): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[2][5] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(68): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(69): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[2][4] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(69): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(70): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[2][3] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(70): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(71): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[2][2] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(71): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(72): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[2][1] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(72): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(73): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[2][0] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(73): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(74): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[3][15] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(74): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(75): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[3][14] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(75): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(76): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[3][13] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(76): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(77): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[3][12] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(77): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(78): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[3][11] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(78): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(79): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[3][10] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(79): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(80): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[3][9] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(80): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(81): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[3][8] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(81): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(82): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[3][7] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(82): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(83): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[3][6] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(83): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(84): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[3][5] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(84): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(85): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[3][4] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(85): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(86): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[3][3] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(86): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(87): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[3][2] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(87): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(88): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[3][1] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(88): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(89): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[3][0] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(89): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(90): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[4][15] '.  Expected 5, found 4.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(90): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(91): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[4][14] '.  Expected 5, found 4.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(91): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(92): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[4][13] '.  Expected 5, found 4.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(92): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(93): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[4][12] '.  Expected 5, found 4.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(93): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(94): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[4][11] '.  Expected 5, found 4.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(94): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(95): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[4][10] '.  Expected 5, found 4.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(95): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(96): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[4][9] '.  Expected 5, found 4.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(96): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(97): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[4][8] '.  Expected 5, found 4.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(97): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(98): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[4][7] '.  Expected 5, found 4.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(98): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(99): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[4][6] '.  Expected 5, found 4.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(99): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(100): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[4][5] '.  Expected 5, found 4.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(100): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(101): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[4][4] '.  Expected 5, found 4.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(101): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(102): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[4][3] '.  Expected 5, found 4.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(102): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(103): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[4][2] '.  Expected 5, found 4.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(103): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(104): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[4][1] '.  Expected 5, found 4.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(104): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(105): (vopt-2685) [TFMPC] - Too few port connections for '\mem2_reg[4][0] '.  Expected 5, found 4.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(105): (vopt-2718) [TFMPC] - Missing connection for port 'Q'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(106): (vopt-2685) [TFMPC] - Too few port connections for '\outp_reg[15] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(106): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(107): (vopt-2685) [TFMPC] - Too few port connections for '\outp_reg[14] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(107): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(108): (vopt-2685) [TFMPC] - Too few port connections for '\outp_reg[13] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(108): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(109): (vopt-2685) [TFMPC] - Too few port connections for '\outp_reg[12] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(109): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(110): (vopt-2685) [TFMPC] - Too few port connections for '\outp_reg[11] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(110): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(111): (vopt-2685) [TFMPC] - Too few port connections for '\outp_reg[10] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(111): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(112): (vopt-2685) [TFMPC] - Too few port connections for '\outp_reg[9] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(112): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(113): (vopt-2685) [TFMPC] - Too few port connections for '\outp_reg[8] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(113): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(114): (vopt-2685) [TFMPC] - Too few port connections for '\outp_reg[7] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(114): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(115): (vopt-2685) [TFMPC] - Too few port connections for '\outp_reg[6] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(115): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(116): (vopt-2685) [TFMPC] - Too few port connections for '\outp_reg[5] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(116): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(117): (vopt-2685) [TFMPC] - Too few port connections for '\outp_reg[4] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(117): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(118): (vopt-2685) [TFMPC] - Too few port connections for '\outp_reg[3] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(118): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(119): (vopt-2685) [TFMPC] - Too few port connections for '\outp_reg[2] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(119): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(120): (vopt-2685) [TFMPC] - Too few port connections for '\outp_reg[1] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(120): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(121): (vopt-2685) [TFMPC] - Too few port connections for '\outp_reg[0] '.  Expected 4, found 3.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(121): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(405): (vopt-2685) [TFMPC] - Too few port connections for 'rws_wire_reg'.  Expected 5, found 4.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(405): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(1356): (vopt-2685) [TFMPC] - Too few port connections for 'add_115'.  Expected 5, found 4.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(1356): (vopt-2718) [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(1469): (vopt-2685) [TFMPC] - Too few port connections for 'dav_wire_reg'.  Expected 5, found 4.
+# ** Warning: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(1469): (vopt-2718) [TFMPC] - Missing connection for port 'QN'.
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -29,244 +232,207 @@ vsim work.tb_fir -sdftyp /tb_fir/u1=/afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16
 # Loading work.IAO21D1(fast)
 # Loading work.LHD1(fast)
 # Loading work.LNCND1(fast)
+# Loading work.OR2D1(fast)
 # Loading work.BUFFD0(fast)
-# Loading work.NR2D1(fast)
-# Loading work.OAI21D1(fast)
+# Loading work.OAI31D1(fast)
 # Loading work.ND2D1(fast)
-# Loading work.ND3D1(fast)
-# Loading work.INVD1(fast)
+# Loading work.INR3D0(fast)
 # Loading work.ND4D1(fast)
-# Loading work.AN2D0(fast)
-# Loading work.AOI22D0(fast)
+# Loading work.INVD1(fast)
+# Loading work.ND3D1(fast)
+# Loading work.OAI221D0(fast)
 # Loading work.AOI222D0(fast)
+# Loading work.INR4D0(fast)
+# Loading work.AN2D0(fast)
 # Loading work.CMPE22D1(fast)
-# Loading work.CKXOR2D0(fast)
-# Loading work.AO21D0(fast)
+# Loading work.XOR2D1(fast)
+# Loading work.AO21D1(fast)
 # Loading work.OAI21D0(fast)
-# Loading work.IOA21D0(fast)
-# Loading work.NR2D0(fast)
-# Loading work.XNR2D0(fast)
-# Loading work.ND2D0(fast)
-# Loading work.OR2D0(fast)
+# Loading work.NR2D1(fast)
+# Loading work.XNR2D1(fast)
+# Loading work.IOA21D1(fast)
 # Loading work.EDFCNQD1(fast)
 # Loading work.DFSND1(fast)
 # Loading work.DFCNQD1(fast)
 # Loading work.NR4D0(fast)
 # Loading work.AO22D0(fast)
-# Loading work.INR4D0(fast)
 # Loading work.IND2D1(fast)
 # Loading work.CMPE32D1(fast)
 # Loading work.CMPE42D1(fast)
-# Loading work.XNR2D1(fast)
-# Loading work.INVD1(fast__1)
-# Loading work.XNR3D0(fast)
-# Loading work.AOI21D0(fast)
 # Loading work.OAI22D0(fast)
-# Loading work.OAI32D0(fast)
+# Loading work.OAI32D1(fast)
+# Loading work.XNR3D1(fast)
+# Loading work.AOI21D0(fast)
+# Loading work.INVD1(fast__1)
 # Loading work.XOR3D1(fast)
-# Loading work.XOR2D1(fast)
-# Loading work.AO21D1(fast)
+# Loading work.INR2D1(fast)
 # Loading work.IND4D1(fast)
 # Loading instances from /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/delays.sdf
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(33): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(26): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[0][15]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(34): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(27): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[0][14]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(35): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(28): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[0][13]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(36): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(29): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[0][12]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(37): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(30): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[0][11]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(38): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(31): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[0][10]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(39): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(32): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[0][9]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(40): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(33): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[0][8]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(41): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(34): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[0][7]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(42): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(35): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[0][6]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(43): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(36): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[0][5]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(44): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(37): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[0][4]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(45): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(38): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[0][3]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(46): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(39): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[0][2]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(47): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(40): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[0][1]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(48): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(41): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[0][0]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(49): [TFMPC] - Too few port connections. Expected 4, found 3.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[1][15]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(50): [TFMPC] - Too few port connections. Expected 4, found 3.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[1][14]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(51): [TFMPC] - Too few port connections. Expected 4, found 3.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[1][13]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(52): [TFMPC] - Too few port connections. Expected 4, found 3.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[1][12]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(53): [TFMPC] - Too few port connections. Expected 4, found 3.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[1][11]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(54): [TFMPC] - Too few port connections. Expected 4, found 3.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[1][10]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(55): [TFMPC] - Too few port connections. Expected 4, found 3.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[1][9]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(56): [TFMPC] - Too few port connections. Expected 4, found 3.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[1][8]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(57): [TFMPC] - Too few port connections. Expected 4, found 3.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[1][7]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
 # ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(58): [TFMPC] - Too few port connections. Expected 4, found 3.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[1][6]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(59): [TFMPC] - Too few port connections. Expected 4, found 3.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[1][5]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(60): [TFMPC] - Too few port connections. Expected 4, found 3.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[1][4]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(61): [TFMPC] - Too few port connections. Expected 4, found 3.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[1][3]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(62): [TFMPC] - Too few port connections. Expected 4, found 3.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[1][2]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(63): [TFMPC] - Too few port connections. Expected 4, found 3.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[1][1]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(64): [TFMPC] - Too few port connections. Expected 4, found 3.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[1][0]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(65): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[2][15]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(66): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(59): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[2][14]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(67): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(60): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[2][13]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(68): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(61): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[2][12]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(69): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(62): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[2][11]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(70): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(63): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[2][10]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(71): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(64): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[2][9]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(72): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(65): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[2][8]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(73): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(66): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[2][7]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(74): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(67): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[2][6]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(75): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(68): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[2][5]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(76): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(69): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[2][4]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(77): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(70): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[2][3]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(78): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(71): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[2][2]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(79): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(72): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[2][1]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(80): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(73): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[2][0]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(81): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(74): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[3][15]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(82): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(75): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[3][14]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(83): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(76): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[3][13]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(84): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(77): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[3][12]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(85): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(78): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[3][11]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(86): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(79): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[3][10]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(87): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(80): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[3][9]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(88): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(81): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[3][8]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(89): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(82): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[3][7]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(90): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(83): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[3][6]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(91): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(84): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[3][5]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(92): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(85): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[3][4]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(93): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(86): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[3][3]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(94): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(87): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[3][2]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(95): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(88): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[3][1]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(96): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(89): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[3][0]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(97): [TFMPC] - Too few port connections. Expected 5, found 4.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][15]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(99): [TFMPC] - Too few port connections. Expected 5, found 4.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][14]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(101): [TFMPC] - Too few port connections. Expected 5, found 4.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][13]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(103): [TFMPC] - Too few port connections. Expected 5, found 4.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][12]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(105): [TFMPC] - Too few port connections. Expected 5, found 4.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][11]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(107): [TFMPC] - Too few port connections. Expected 5, found 4.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][10]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(109): [TFMPC] - Too few port connections. Expected 5, found 4.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][9]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(110): [TFMPC] - Too few port connections. Expected 5, found 4.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][8]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(111): [TFMPC] - Too few port connections. Expected 5, found 4.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][7]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(112): [TFMPC] - Too few port connections. Expected 5, found 4.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][6]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(113): [TFMPC] - Too few port connections. Expected 5, found 4.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][5]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(114): [TFMPC] - Too few port connections. Expected 5, found 4.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][4]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(115): [TFMPC] - Too few port connections. Expected 5, found 4.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][3]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(116): [TFMPC] - Too few port connections. Expected 5, found 4.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][2]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(117): [TFMPC] - Too few port connections. Expected 5, found 4.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][1]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(118): [TFMPC] - Too few port connections. Expected 5, found 4.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\mem2_reg[4][0]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(119): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(106): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\outp_reg[15]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(120): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(107): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\outp_reg[14]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(121): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(108): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\outp_reg[13]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(122): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(109): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\outp_reg[12]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(123): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(110): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\outp_reg[11]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(124): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(111): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\outp_reg[10]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(125): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(112): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\outp_reg[9]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(126): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(113): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\outp_reg[8]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(127): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(114): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\outp_reg[7]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(128): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(115): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\outp_reg[6]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(129): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(116): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\outp_reg[5]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(130): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(117): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\outp_reg[4]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(131): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(118): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\outp_reg[3]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(132): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(119): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\outp_reg[2]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(133): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(120): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\outp_reg[1]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(134): [TFMPC] - Too few port connections. Expected 4, found 3.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(121): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/U30_CBRAM/\outp_reg[0]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(461): [TFMPC] - Too few port connections. Expected 5, found 4.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(405): [TFMPC] - Too few port connections. Expected 5, found 4.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/rws_wire_reg File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(1537): [TFMPC] - Too few port connections. Expected 5, found 4.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\counter_reg[2]  File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
-# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(1540): [TFMPC] - Too few port connections. Expected 5, found 4.
+# ** Warning: (vsim-3017) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/main.v(1469): [TFMPC] - Too few port connections. Expected 5, found 4.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/dav_wire_reg File: /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v
 # Loading timing data from /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/delays.sdf
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\outp_wire_reg[0] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\outp_wire_reg[1] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\outp_wire_reg[2] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\outp_wire_reg[3] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\outp_wire_reg[4] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\outp_wire_reg[5] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\outp_wire_reg[6] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\outp_wire_reg[7] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\outp_wire_reg[8] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\outp_wire_reg[9] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\outp_wire_reg[10] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\outp_wire_reg[11] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\outp_wire_reg[12] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\outp_wire_reg[13] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\outp_wire_reg[14] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/u_FIRP/\outp_wire_reg[15] 
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[31] 
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
@@ -320,8 +486,6 @@ vsim work.tb_fir -sdftyp /tb_fir/u1=/afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[6] 
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[5] 
-# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[0] 
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[1] 
@@ -330,19 +494,19 @@ vsim work.tb_fir -sdftyp /tb_fir/u1=/afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[4] 
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[5] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\pointer_reg[2] 
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[0] 
-# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[1] 
-# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[2] 
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[11] 
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[10] 
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[17] 
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[1] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[2] 
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[13] 
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
@@ -362,8 +526,6 @@ vsim work.tb_fir -sdftyp /tb_fir/u1=/afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[5] 
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[16] 
-# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[12] 
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[6] 
@@ -373,6 +535,8 @@ vsim work.tb_fir -sdftyp /tb_fir/u1=/afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[24] 
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[20] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[17] 
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[29] 
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
@@ -390,6 +554,8 @@ vsim work.tb_fir -sdftyp /tb_fir/u1=/afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[19] 
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[16] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[27] 
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\counter_reg[23] 
@@ -398,9 +564,9 @@ vsim work.tb_fir -sdftyp /tb_fir/u1=/afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\adrs_wire_reg[0] 
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\adrs_wire_reg[1] 
-# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\adrs_wire_reg[2] 
+# ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(3869): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/\adrs_wire_reg[1] 
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5231): Setting negative specify check constraint (0 ns) to zero.
 #    Time: 0 ns  Iteration: 0  Instance: /tb_fir/u1/U_delayline/rws_wire_reg
 # ** Warning: (vsim-3448) /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPPED/tcbn90g.v(5577): Setting negative specify check constraint (0 ns) to zero.
@@ -479,10 +645,10 @@ sim:/tb_fir/outp_wire \
 sim:/tb_fir/clk_period \
 sim:/tb_fir/nr_of_taps \
 sim:/tb_fir/width
-run 18 ns
-vcd file /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/POWER/power_50000.vcd
+run 18ns
+vcd file /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/POWER/power_500.vcd
 vcd add -r tb_fir/*
-run 1000000ns
+run 10000ns
 quit -f
-# End time: 13:22:10 on Nov 14,2019, Elapsed time: 0:02:49
-# Errors: 0, Warnings: 199
+# End time: 13:39:25 on Nov 14,2019, Elapsed time: 0:02:46
+# Errors: 0, Warnings: 380

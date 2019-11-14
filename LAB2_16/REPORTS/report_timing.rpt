@@ -6,11 +6,11 @@ Report : timing
         -max_paths 1
 Design : FIR_Toplevel_5
 Version: J-2014.09
-Date   : Thu Nov 14 13:30:21 2019
+Date   : Thu Nov 14 13:44:30 2019
 ****************************************
 
 Operating Conditions: NCCOM   Library: tcbn90gtc
-Wire Load Model Mode: segmented
+Wire Load Model Mode: top
 
   Startpoint: u_FIRP/coef_addr_wire_reg[1]
               (rising edge-triggered flip-flop clocked by clk)
@@ -21,83 +21,76 @@ Wire Load Model Mode: segmented
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  FIR_Processor      ZeroWireload          tcbn90gtc
   FIR_Toplevel_5     TSMC8K_Lowk_Conservative
                                            tcbn90gtc
-  Delayline_CB       ZeroWireload          tcbn90gtc
-  ROM_Process        ZeroWireload          tcbn90gtc
-  FIR_Processor_DW_mult_uns_0
-                     ZeroWireload          tcbn90gtc
-  FIR_Processor_DW01_add_0
-                     ZeroWireload          tcbn90gtc
 
   Point                                                   Incr       Path
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             0.00       0.00
   u_FIRP/coef_addr_wire_reg[1]/CP (DFCNQD1)               0.00       0.00 r
-  u_FIRP/coef_addr_wire_reg[1]/Q (DFCNQD1)                0.15       0.15 r
-  u_FIRP/coef_addr[1] (FIR_Processor)                     0.00       0.15 r
-  u_ROM/address[1] (ROM_Process)                          0.00       0.15 r
-  u_ROM/U6/ZN (INVD1)                                     0.02       0.17 f
-  u_ROM/U5/ZN (AOI21D0)                                   0.06       0.23 r
-  u_ROM/coeficient_out[0] (ROM_Process)                   0.00       0.23 r
-  u_FIRP/coeficient[0] (FIR_Processor)                    0.00       0.23 r
-  u_FIRP/mult_115/b[0] (FIR_Processor_DW_mult_uns_0)      0.00       0.23 r
-  u_FIRP/mult_115/U539/Z (BUFFD0)                         0.16       0.39 r
-  u_FIRP/mult_115/U689/ZN (INVD1)                         0.12       0.50 f
-  u_FIRP/mult_115/U680/ZN (XNR2D1)                        0.09       0.59 f
-  u_FIRP/mult_115/U678/ZN (OAI22D0)                       0.10       0.69 r
-  u_FIRP/mult_115/U677/S (CMPE22D1)                       0.08       0.78 f
-  u_FIRP/mult_115/U80/CO (CMPE32D1)                       0.10       0.88 f
-  u_FIRP/mult_115/U79/CO (CMPE32D1)                       0.06       0.94 f
-  u_FIRP/mult_115/U78/CO (CMPE32D1)                       0.06       0.99 f
-  u_FIRP/mult_115/U77/CO (CMPE32D1)                       0.06       1.05 f
-  u_FIRP/mult_115/U76/CO (CMPE32D1)                       0.06       1.11 f
-  u_FIRP/mult_115/U75/CO (CMPE32D1)                       0.06       1.17 f
-  u_FIRP/mult_115/U74/CO (CMPE32D1)                       0.06       1.22 f
-  u_FIRP/mult_115/U73/CO (CMPE32D1)                       0.06       1.28 f
-  u_FIRP/mult_115/U72/CO (CMPE32D1)                       0.06       1.34 f
-  u_FIRP/mult_115/U71/CO (CMPE32D1)                       0.06       1.40 f
-  u_FIRP/mult_115/U70/CO (CMPE32D1)                       0.06       1.45 f
-  u_FIRP/mult_115/U69/CO (CMPE32D1)                       0.06       1.51 f
-  u_FIRP/mult_115/U68/CO (CMPE32D1)                       0.06       1.57 f
-  u_FIRP/mult_115/U67/CO (CMPE32D1)                       0.06       1.62 f
-  u_FIRP/mult_115/U66/CO (CMPE32D1)                       0.06       1.68 f
-  u_FIRP/mult_115/U65/CO (CMPE32D1)                       0.06       1.74 f
-  u_FIRP/mult_115/U64/CO (CMPE32D1)                       0.06       1.80 f
-  u_FIRP/mult_115/U63/CO (CMPE32D1)                       0.06       1.85 f
-  u_FIRP/mult_115/U62/CO (CMPE32D1)                       0.06       1.91 f
-  u_FIRP/mult_115/U61/CO (CMPE32D1)                       0.06       1.97 f
-  u_FIRP/mult_115/U60/CO (CMPE32D1)                       0.06       2.03 f
-  u_FIRP/mult_115/U59/CO (CMPE32D1)                       0.06       2.08 f
-  u_FIRP/mult_115/U58/CO (CMPE32D1)                       0.06       2.14 f
-  u_FIRP/mult_115/U57/CO (CMPE32D1)                       0.06       2.20 f
-  u_FIRP/mult_115/U56/CO (CMPE32D1)                       0.06       2.26 f
-  u_FIRP/mult_115/U55/CO (CMPE32D1)                       0.06       2.31 f
-  u_FIRP/mult_115/U54/CO (CMPE32D1)                       0.06       2.37 f
-  u_FIRP/mult_115/U53/CO (CMPE32D1)                       0.05       2.42 f
-  u_FIRP/mult_115/U660/ZN (XNR3D1)                        0.14       2.56 r
-  u_FIRP/mult_115/U851/ZN (XNR3D1)                        0.14       2.70 r
+  u_FIRP/coef_addr_wire_reg[1]/Q (DFCNQD1)                0.17       0.17 r
+  u_FIRP/coef_addr[1] (FIR_Processor)                     0.00       0.17 r
+  u_ROM/address[1] (ROM_Process)                          0.00       0.17 r
+  u_ROM/U6/ZN (INVD1)                                     0.02       0.19 f
+  u_ROM/U5/ZN (AOI21D0)                                   0.06       0.25 r
+  u_ROM/coeficient_out[0] (ROM_Process)                   0.00       0.25 r
+  u_FIRP/coeficient[0] (FIR_Processor)                    0.00       0.25 r
+  u_FIRP/mult_115/b[0] (FIR_Processor_DW_mult_uns_0)      0.00       0.25 r
+  u_FIRP/mult_115/U539/Z (BUFFD0)                         0.26       0.51 r
+  u_FIRP/mult_115/U693/ZN (INVD1)                         0.20       0.72 f
+  u_FIRP/mult_115/U683/ZN (XNR2D1)                        0.11       0.83 f
+  u_FIRP/mult_115/U681/ZN (OAI22D0)                       0.12       0.95 r
+  u_FIRP/mult_115/U680/S (CMPE22D1)                       0.09       1.04 f
+  u_FIRP/mult_115/U80/CO (CMPE32D1)                       0.11       1.14 f
+  u_FIRP/mult_115/U79/CO (CMPE32D1)                       0.06       1.20 f
+  u_FIRP/mult_115/U78/CO (CMPE32D1)                       0.06       1.26 f
+  u_FIRP/mult_115/U77/CO (CMPE32D1)                       0.06       1.33 f
+  u_FIRP/mult_115/U76/CO (CMPE32D1)                       0.06       1.39 f
+  u_FIRP/mult_115/U75/CO (CMPE32D1)                       0.06       1.45 f
+  u_FIRP/mult_115/U74/CO (CMPE32D1)                       0.06       1.51 f
+  u_FIRP/mult_115/U73/CO (CMPE32D1)                       0.06       1.57 f
+  u_FIRP/mult_115/U72/CO (CMPE32D1)                       0.06       1.63 f
+  u_FIRP/mult_115/U71/CO (CMPE32D1)                       0.06       1.69 f
+  u_FIRP/mult_115/U70/CO (CMPE32D1)                       0.06       1.75 f
+  u_FIRP/mult_115/U69/CO (CMPE32D1)                       0.06       1.81 f
+  u_FIRP/mult_115/U68/CO (CMPE32D1)                       0.06       1.87 f
+  u_FIRP/mult_115/U67/CO (CMPE32D1)                       0.06       1.94 f
+  u_FIRP/mult_115/U66/CO (CMPE32D1)                       0.06       2.00 f
+  u_FIRP/mult_115/U65/CO (CMPE32D1)                       0.06       2.06 f
+  u_FIRP/mult_115/U64/CO (CMPE32D1)                       0.06       2.12 f
+  u_FIRP/mult_115/U63/CO (CMPE32D1)                       0.06       2.18 f
+  u_FIRP/mult_115/U62/CO (CMPE32D1)                       0.06       2.24 f
+  u_FIRP/mult_115/U61/CO (CMPE32D1)                       0.06       2.30 f
+  u_FIRP/mult_115/U60/CO (CMPE32D1)                       0.06       2.36 f
+  u_FIRP/mult_115/U59/CO (CMPE32D1)                       0.06       2.42 f
+  u_FIRP/mult_115/U58/CO (CMPE32D1)                       0.06       2.48 f
+  u_FIRP/mult_115/U57/CO (CMPE32D1)                       0.06       2.55 f
+  u_FIRP/mult_115/U56/CO (CMPE32D1)                       0.06       2.61 f
+  u_FIRP/mult_115/U55/CO (CMPE32D1)                       0.06       2.67 f
+  u_FIRP/mult_115/U54/CO (CMPE32D1)                       0.06       2.73 f
+  u_FIRP/mult_115/U53/CO (CMPE32D1)                       0.06       2.79 f
+  u_FIRP/mult_115/U685/ZN (XNR3D1)                        0.14       2.93 r
+  u_FIRP/mult_115/U854/ZN (XNR3D1)                        0.14       3.07 r
   u_FIRP/mult_115/product[31] (FIR_Processor_DW_mult_uns_0)
-                                                          0.00       2.70 r
-  u_FIRP/add_115/A[31] (FIR_Processor_DW01_add_0)         0.00       2.70 r
-  u_FIRP/add_115/U1_31/Z (XOR3D1)                         0.15       2.85 f
-  u_FIRP/add_115/SUM[31] (FIR_Processor_DW01_add_0)       0.00       2.85 f
-  u_FIRP/U47/Z (AN2D0)                                    0.06       2.91 f
-  u_FIRP/accumulator_reg[31]/D (DFCNQD1)                  0.00       2.91 f
-  data arrival time                                                  2.91
+                                                          0.00       3.07 r
+  u_FIRP/add_115/A[31] (FIR_Processor_DW01_add_0)         0.00       3.07 r
+  u_FIRP/add_115/U1_31/Z (XOR3D1)                         0.14       3.21 r
+  u_FIRP/add_115/SUM[31] (FIR_Processor_DW01_add_0)       0.00       3.21 r
+  u_FIRP/U51/Z (AN2D0)                                    0.07       3.28 r
+  u_FIRP/accumulator_reg[31]/D (DFCNQD1)                  0.00       3.28 r
+  data arrival time                                                  3.28
 
   clock clk (rise edge)                                   5.00       5.00
   clock network delay (ideal)                             0.00       5.00
   u_FIRP/accumulator_reg[31]/CP (DFCNQD1)                 0.00       5.00 r
-  library setup time                                     -0.02       4.98
-  data required time                                                 4.98
+  library setup time                                     -0.03       4.97
+  data required time                                                 4.97
   --------------------------------------------------------------------------
-  data required time                                                 4.98
-  data arrival time                                                 -2.91
+  data required time                                                 4.97
+  data arrival time                                                 -3.28
   --------------------------------------------------------------------------
-  slack (MET)                                                        2.08
+  slack (MET)                                                        1.69
 
 
 1

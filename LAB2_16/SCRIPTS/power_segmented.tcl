@@ -17,7 +17,7 @@ analyze -library WORK -format vhdl {/afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16
 analyze -library WORK -format vhdl {/afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/SOURCE/SRAM.vhd}
 analyze -library WORK -format vhdl {/afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/SOURCE/FIR_Toplevel.vhd}
 ######Elaborate Design###########
-elaborate FIR_Toplevel -lib WORK -update -param "width = 4" -param "filter_taps = 5"
+elaborate FIR_Toplevel -lib WORK -update -param "width = 16" -param "filter_taps = 5"
 ########Set Constraints#############
 
 # Wire load
@@ -35,7 +35,7 @@ set_false_path -setup -reset_path -from { rst_n }
 set_false_path -hold -reset_path -from { rst_n }
 
 # read saif (for more accurate power modelling)
-read_saif -input ./activity.saif -instance_name tb_fir
+read_saif -input /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/POWER/power_500.saif -instance_name tb_fir
 
 #######Compile Option############
 compile -map_effort medium
@@ -50,4 +50,4 @@ write -format verilog -hier -o /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/MAPP
 report_timing > /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/REPORTS/report_timing.rpt
 report_area > /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/REPORTS/report_area.rpt
 report_cell > /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/REPORTS/report_cell.rpt
-report_power > /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/REPORTS/report_power.rpt
+report_power > /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2_16/REPORTS/report_power_500_segmented.rpt
