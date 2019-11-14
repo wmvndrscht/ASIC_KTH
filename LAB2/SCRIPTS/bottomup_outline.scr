@@ -2,48 +2,48 @@
 remove_design -all
 
 #/* Load Traget technology files */
-source /afs/kth.se/home/w/v/wvds/IL2225_LAB//global_scripts/tsmc90gtc.scr
-source /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/synopsys_dc.setup
+source /afs/kth.se/home/w/v/wvds/IL2225_LAB/global_scripts/tsmc90gtc.scr
+source "/afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/synopsys_dc.setup"
 
 #/* compile each subblock independently */
 
 #Compile U_delayline
-read_file -format vhdl -lib WORK {"./SOURCE/mics.vhd"}
-read_file -format vhdl -lib WORK {"./SOURCE/SRAM.vhd"}
-read_file -format vhdl -lib WORK {"./SOURCE/DelayLine_CB.vhd"}
+read_file -format vhdl -lib WORK {/afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/SOURCE/misc.vhd}
+read_file -format vhdl -lib WORK {/afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/SOURCE/SRAM.vhd}
+read_file -format vhdl -lib WORK {/afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/SOURCE/DelayLine_CB.vhd}
 current_design Delayline_CB
 link
 uniquify
-source ./SCRIPTS/Delayline_CB.wscr
+source /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/SCRIPTS/Delayline_CB.wscr
 compile
 
 
 #Compile u_FIRP
-read_file -format vhdl -lib WORK "./SOURCE/FIR_Processor.vhd"
+read_file -format vhdl -lib WORK "/afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/SOURCE/FIR_Processor.vhd"
 current_design FIR_Processor
 link
 uniquify
-source ./MAPPED/constraints.sdc
-source ./MAPPED/FIR_Processor.sdc
+source /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/constraints.sdc
+source /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2//MAPPED/FIR_Processor.sdc
 compile
 
 #Compile u_ROM
-read_file -format vhdl -lib WORK "./SOURCE/ROM_Process.vhd"
+read_file -format vhdl -lib WORK "/afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/SOURCE/ROM_Process.vhd"
 current_design ROM_Process
 link
 uniquify
-source ./MAPPED/constraints.sdc
-source ./MAPPED/ROM_Process.sdc
+source /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/constraints.sdc
+source /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2//MAPPED/ROM_Process.sdc
 compile
 
 
 #compile FIR_Toplevel
-read_file -format vhdl -lib WORK {"./SOURCE/mics.vhd"}
-read_file -format vhdl -lib WORK {"./SOURCE/FIR_Toplevel.vhd"}
+read_file -format vhdl -lib WORK "/afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/SOURCE/mics.vhd"
+read_file -format vhdl -lib WORK "/afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/SOURCE/FIR_Toplevel.vhd"
 current_design FIR_Toplevel
 link
 uniquify
-source ./MAPPED/constraints.sdc
+source /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/constraints.sdc
 compile
 
 #check if the constraints are met
@@ -57,13 +57,12 @@ characterize -constraint {U_delayline  u_FIRP  u_ROM}
 
 #Save new constraints
 current_design Delayline_CB
-write_script > ./SCRIPTS/Delayline_CB.wscr
+write_script > "/afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/SCRIPTS/Delayline_CB.wscr"
 
 current_design FIR_Processor
-write_script > ./SCRIPTS/FIR_Processor.wscr
+write_script > "/afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/SCRIPTS/FIR_Processor.wscr"
 
 current_design ROM_Process
-write_script > ./SCRIPTS/ROM_Process.wscr
+write_script > "/afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/SCRIPTS/ROM_Process.wscr"
 
 current_design FIR_Toplevel
-

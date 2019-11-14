@@ -2,14 +2,13 @@ Information: Propagating switching activity (low effort zero delay simulation). 
 Warning: The derived toggle rate value (0.400000) for the clock net 'clk' conflicts with the annotated value (0.200602). Using the annotated value. (PWR-12)
 Warning: Design has unannotated primary inputs. (PWR-414)
 Warning: Design has unannotated sequential cell outputs. (PWR-415)
-Warning: Design has unannotated black box outputs. (PWR-428)
  
 ****************************************
 Report : power
         -analysis_effort low
 Design : FIR_Toplevel_4_5
 Version: J-2014.09
-Date   : Thu Nov 14 16:01:21 2019
+Date   : Thu Nov 14 16:09:25 2019
 ****************************************
 
 
@@ -23,8 +22,7 @@ Wire Load Model Mode: top
 
 Design        Wire Load Model            Library
 ------------------------------------------------
-FIR_Toplevel_4_5       TSMC8K_Lowk_Conservative
-                                         tcbn90gtc
+FIR_Toplevel_4_5       ZeroWireload      tcbn90gtc
 
 
 Global Operating Voltage = 1    
@@ -36,12 +34,12 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  = 137.1664 uW   (84%)
-  Net Switching Power  =  26.9584 uW   (16%)
+  Cell Internal Power  = 144.4621 uW   (91%)
+  Net Switching Power  =  14.5393 uW    (9%)
                          ---------
-Total Dynamic Power    = 164.1248 uW  (100%)
+Total Dynamic Power    = 159.0014 uW  (100%)
 
-Cell Leakage Power     =   8.6184 uW
+Cell Leakage Power     =   8.1708 uW
 
 
                  Internal         Switching           Leakage            Total
@@ -50,10 +48,10 @@ Power Group      Power            Power               Power              Power  
 io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
-clock_network  4.7913e-05        1.4550e-03            8.9580        1.5119e-03  (   0.88%)
-register           0.1199        5.9411e-03        3.0047e+03            0.1288  (  74.58%)
-sequential     2.0840e-03        1.8273e-04          509.4156        2.7761e-03  (   1.61%)
-combinational  1.5150e-02        1.9380e-02        5.0953e+03        3.9625e-02  (  22.94%)
+clock_network  2.9918e-03        1.2998e-03           49.9936        4.3416e-03  (   2.60%)
+register           0.1252        3.1413e-03        3.0357e+03            0.1314  (  78.57%)
+sequential     2.2947e-03        9.0070e-05          509.4699        2.8942e-03  (   1.73%)
+combinational  1.3998e-02        1.0008e-02        4.5756e+03        2.8582e-02  (  17.10%)
 --------------------------------------------------------------------------------------------------
-Total              0.1372 mW     2.6958e-02 mW     8.6184e+03 nW         0.1727 mW
+Total              0.1445 mW     1.4539e-02 mW     8.1708e+03 nW         0.1672 mW
 1

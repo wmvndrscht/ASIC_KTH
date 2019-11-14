@@ -1,0 +1,112 @@
+###################################################################
+
+# Created by write_script -format dctcl on Thu Nov 14 16:42:59 2019
+
+###################################################################
+
+# Set the current_design #
+current_design Delayline_CB
+
+set_units -time ns -resistance kOhm -capacitance pF -voltage V -current mA
+set_operating_conditions NCCOM -library tcbn90gtc
+set_wire_load_mode top
+set_wire_load_model -name ZeroWireload -library tcbn90gtc
+set_local_link_library {tcbn90gtc.db}
+set_wire_load_selection_group WireAreaForZero
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports rst_n]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports clk]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports           \
+sample_clk]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports           \
+{sample[3]}]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports           \
+{sample[2]}]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports           \
+{sample[1]}]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports           \
+{sample[0]}]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports           \
+{sample_out[3]}]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports           \
+{sample_out[2]}]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports           \
+{sample_out[1]}]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports           \
+{sample_out[0]}]
+set_connection_class "default" [get_ports rst_n]
+set_connection_class "default" [get_ports clk]
+set_connection_class "default" [get_ports sample_clk]
+set_connection_class "default" [get_ports {sample[3]}]
+set_connection_class "default" [get_ports {sample[2]}]
+set_connection_class "default" [get_ports {sample[1]}]
+set_connection_class "default" [get_ports {sample[0]}]
+set_connection_class "default" [get_ports {sample_out[3]}]
+set_connection_class "default" [get_ports {sample_out[2]}]
+set_connection_class "default" [get_ports {sample_out[1]}]
+set_connection_class "default" [get_ports {sample_out[0]}]
+set_fanout_load 1 [get_ports {sample_out[3]}]
+set_fanout_load 1 [get_ports {sample_out[2]}]
+set_fanout_load 1 [get_ports {sample_out[1]}]
+set_fanout_load 1 [get_ports {sample_out[0]}]
+set_port_fanout_number 1 [get_ports rst_n]
+set_port_fanout_number 49 [get_ports clk]
+set_port_fanout_number 1 [get_ports sample_clk]
+set_load -pin_load 0.0023 [get_ports rst_n]
+set_load -pin_load 0.0788 [get_ports clk]
+set_load -pin_load 0.001 [get_ports sample_clk]
+set_load -pin_load 0.0011 [get_ports {sample_out[3]}]
+set_load -pin_load 0.0011 [get_ports {sample_out[2]}]
+set_load -pin_load 0.0011 [get_ports {sample_out[1]}]
+set_load -pin_load 0.0011 [get_ports {sample_out[0]}]
+set_max_transition 0.712 [get_ports rst_n]
+set_max_transition 0.712 [get_ports sample_clk]
+set_max_transition 0.712 [get_ports {sample_out[3]}]
+set_max_transition 0.712 [get_ports {sample_out[2]}]
+set_max_transition 0.712 [get_ports {sample_out[1]}]
+set_max_transition 0.712 [get_ports {sample_out[0]}]
+set_attribute -type string [get_cells C6] roi_cell_sig add_78
+set_attribute -type string [get_cells C5] roi_cell_sig add_78
+set_attribute -type string [get_cells C7] roi_cell_sig add_78
+set_attribute -type float [get_cells C6] roi_isolation_gain 0.401094
+set_attribute -type float [get_cells C5] roi_isolation_gain 0.401094
+set_attribute -type float [get_cells C7] roi_isolation_gain 0.401094
+set_attribute -type integer [get_cells C6] roi_isolation_style 3
+set_attribute -type integer [get_cells C5] roi_isolation_style 3
+set_attribute -type integer [get_cells C7] roi_isolation_style 3
+set_attribute -type boolean [get_pins C6/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C5/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C7/A1] roi_orig_data true
+set_size_only [get_cells C6] true
+set_size_only [get_cells C5] true
+set_size_only [get_cells C7] true
+set_switching_activity -period 1 -toggle_rate 0.0187683 -static_probability    \
+0.243729 [get_pins rws_wire_reg/QN]
+create_clock [get_ports clk]  -period 5  -waveform {0 2.5}
+create_clock -name port_clock_virtual1  -period 5  -waveform {0 2.5}
+group_path -default  -to [get_clocks port_clock_virtual1]
+set_false_path   -from [get_clocks port_clock_virtual1]
+set_input_delay -clock clk  -rise 0  [get_ports clk]
+set_input_delay -clock clk  -clock_fall  -fall 0  -add_delay  [get_ports clk]
+set_input_delay 0  [get_ports {sample[0]}]
+set_input_delay 0  [get_ports {sample[1]}]
+set_input_delay 0  [get_ports {sample[2]}]
+set_input_delay 0  [get_ports {sample[3]}]
+set_input_delay 0  [get_ports sample_clk]
+set_input_delay -clock port_clock_virtual1  0  [get_ports rst_n]
+set_output_delay -clock clk  -max -rise 0.849676  [get_ports {sample_out[0]}]
+set_output_delay -clock clk  -max -fall 0.81531  [get_ports {sample_out[0]}]
+set_output_delay -clock clk  -min -rise 0.243388  [get_ports {sample_out[0]}]
+set_output_delay -clock clk  -min -fall 0.220688  [get_ports {sample_out[0]}]
+set_output_delay -clock clk  -max -rise 0.849187  [get_ports {sample_out[1]}]
+set_output_delay -clock clk  -max -fall 0.81771  [get_ports {sample_out[1]}]
+set_output_delay -clock clk  -min -rise 0.338741  [get_ports {sample_out[1]}]
+set_output_delay -clock clk  -min -fall 0.32266  [get_ports {sample_out[1]}]
+set_output_delay -clock clk  -max -rise 0.829834  [get_ports {sample_out[2]}]
+set_output_delay -clock clk  -max -fall 0.792522  [get_ports {sample_out[2]}]
+set_output_delay -clock clk  -min -rise 0.370761  [get_ports {sample_out[2]}]
+set_output_delay -clock clk  -min -fall 0.35944  [get_ports {sample_out[2]}]
+set_output_delay -clock clk  -max -rise 0.826072  [get_ports {sample_out[3]}]
+set_output_delay -clock clk  -max -fall 0.794718  [get_ports {sample_out[3]}]
+set_output_delay -clock clk  -min -rise 0.370764  [get_ports {sample_out[3]}]
+set_output_delay -clock clk  -min -fall 0.359444  [get_ports {sample_out[3]}]
+1

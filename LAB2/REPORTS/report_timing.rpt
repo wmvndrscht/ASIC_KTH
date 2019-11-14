@@ -4,84 +4,79 @@ Report : timing
         -path full
         -delay max
         -max_paths 1
-Design : FIR_Toplevel_5
+Design : FIR_Toplevel_4_5
 Version: J-2014.09
-Date   : Thu Nov 14 12:36:26 2019
+Date   : Thu Nov 14 16:12:44 2019
 ****************************************
 
 Operating Conditions: NCCOM   Library: tcbn90gtc
-Wire Load Model Mode: segmented
+Wire Load Model Mode: top
 
-  Startpoint: U_delayline/counter_reg[0]
+  Startpoint: u_FIRP/counter_reg[0]
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: U_delayline/counter_reg[31]
+  Endpoint: u_FIRP/counter_reg[31]
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
 
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
-  FIR_Processor      ZeroWireload          tcbn90gtc
-  FIR_Toplevel_5     TSMC8K_Lowk_Conservative
-                                           tcbn90gtc
-  Delayline_CB       ZeroWireload          tcbn90gtc
-  Delayline_CB_DW01_inc_0
-                     ZeroWireload          tcbn90gtc
+  FIR_Toplevel_4_5   ZeroWireload          tcbn90gtc
 
   Point                                                   Incr       Path
   --------------------------------------------------------------------------
   clock clk (rise edge)                                   0.00       0.00
   clock network delay (ideal)                             0.00       0.00
-  U_delayline/counter_reg[0]/CP (DFCNQD1)                 0.00       0.00 r
-  U_delayline/counter_reg[0]/Q (DFCNQD1)                  0.15       0.15 r
-  U_delayline/add_78/A[0] (Delayline_CB_DW01_inc_0)       0.00       0.15 r
-  U_delayline/add_78/U1_1_1/CO (CMPE22D1)                 0.06       0.20 r
-  U_delayline/add_78/U1_1_2/CO (CMPE22D1)                 0.05       0.26 r
-  U_delayline/add_78/U1_1_3/CO (CMPE22D1)                 0.05       0.31 r
-  U_delayline/add_78/U1_1_4/CO (CMPE22D1)                 0.05       0.37 r
-  U_delayline/add_78/U1_1_5/CO (CMPE22D1)                 0.05       0.42 r
-  U_delayline/add_78/U1_1_6/CO (CMPE22D1)                 0.05       0.48 r
-  U_delayline/add_78/U1_1_7/CO (CMPE22D1)                 0.05       0.53 r
-  U_delayline/add_78/U1_1_8/CO (CMPE22D1)                 0.05       0.59 r
-  U_delayline/add_78/U1_1_9/CO (CMPE22D1)                 0.05       0.64 r
-  U_delayline/add_78/U1_1_10/CO (CMPE22D1)                0.05       0.70 r
-  U_delayline/add_78/U1_1_11/CO (CMPE22D1)                0.05       0.75 r
-  U_delayline/add_78/U1_1_12/CO (CMPE22D1)                0.05       0.80 r
-  U_delayline/add_78/U1_1_13/CO (CMPE22D1)                0.05       0.86 r
-  U_delayline/add_78/U1_1_14/CO (CMPE22D1)                0.05       0.91 r
-  U_delayline/add_78/U1_1_15/CO (CMPE22D1)                0.05       0.97 r
-  U_delayline/add_78/U1_1_16/CO (CMPE22D1)                0.05       1.02 r
-  U_delayline/add_78/U1_1_17/CO (CMPE22D1)                0.05       1.08 r
-  U_delayline/add_78/U1_1_18/CO (CMPE22D1)                0.05       1.13 r
-  U_delayline/add_78/U1_1_19/CO (CMPE22D1)                0.05       1.19 r
-  U_delayline/add_78/U1_1_20/CO (CMPE22D1)                0.05       1.24 r
-  U_delayline/add_78/U1_1_21/CO (CMPE22D1)                0.05       1.30 r
-  U_delayline/add_78/U1_1_22/CO (CMPE22D1)                0.05       1.35 r
-  U_delayline/add_78/U1_1_23/CO (CMPE22D1)                0.05       1.40 r
-  U_delayline/add_78/U1_1_24/CO (CMPE22D1)                0.05       1.46 r
-  U_delayline/add_78/U1_1_25/CO (CMPE22D1)                0.05       1.51 r
-  U_delayline/add_78/U1_1_26/CO (CMPE22D1)                0.05       1.57 r
-  U_delayline/add_78/U1_1_27/CO (CMPE22D1)                0.05       1.62 r
-  U_delayline/add_78/U1_1_28/CO (CMPE22D1)                0.05       1.68 r
-  U_delayline/add_78/U1_1_29/CO (CMPE22D1)                0.05       1.73 r
-  U_delayline/add_78/U1_1_30/CO (CMPE22D1)                0.05       1.78 r
-  U_delayline/add_78/U1/Z (XOR2D1)                        0.07       1.84 f
-  U_delayline/add_78/SUM[31] (Delayline_CB_DW01_inc_0)
-                                                          0.00       1.84 f
-  U_delayline/U21/Z (AO22D0)                              0.10       1.94 f
-  U_delayline/counter_reg[31]/D (DFCNQD1)                 0.00       1.94 f
-  data arrival time                                                  1.94
+  u_FIRP/counter_reg[0]/CP (DFSND1)                       0.00       0.00 r
+  u_FIRP/counter_reg[0]/Q (DFSND1)                        0.11       0.11 f
+  u_FIRP/C56/Z (OR2D0)                                    0.07       0.18 f
+  u_FIRP/sub_79/A[0] (FIR_Processor_DW01_dec_0)           0.00       0.18 f
+  u_FIRP/sub_79/U67/Z (OR2D0)                             0.08       0.26 f
+  u_FIRP/sub_79/U66/Z (OR2D0)                             0.07       0.33 f
+  u_FIRP/sub_79/U65/Z (OR2D0)                             0.07       0.40 f
+  u_FIRP/sub_79/U64/Z (OR2D0)                             0.07       0.47 f
+  u_FIRP/sub_79/U63/Z (OR2D0)                             0.07       0.54 f
+  u_FIRP/sub_79/U62/Z (OR2D0)                             0.07       0.62 f
+  u_FIRP/sub_79/U61/ZN (NR2D0)                            0.08       0.70 r
+  u_FIRP/sub_79/U60/ZN (ND2D0)                            0.05       0.75 f
+  u_FIRP/sub_79/U59/ZN (NR2D0)                            0.08       0.83 r
+  u_FIRP/sub_79/U58/ZN (ND2D0)                            0.05       0.89 f
+  u_FIRP/sub_79/U56/ZN (NR2D0)                            0.08       0.97 r
+  u_FIRP/sub_79/U54/ZN (ND2D0)                            0.05       1.02 f
+  u_FIRP/sub_79/U52/Z (OR2D0)                             0.08       1.09 f
+  u_FIRP/sub_79/U50/Z (OR2D0)                             0.07       1.17 f
+  u_FIRP/sub_79/U48/Z (OR2D0)                             0.07       1.24 f
+  u_FIRP/sub_79/U46/Z (OR2D0)                             0.07       1.31 f
+  u_FIRP/sub_79/U44/Z (OR2D0)                             0.07       1.38 f
+  u_FIRP/sub_79/U42/Z (OR2D0)                             0.07       1.45 f
+  u_FIRP/sub_79/U40/Z (OR2D0)                             0.07       1.52 f
+  u_FIRP/sub_79/U37/Z (OR2D0)                             0.07       1.59 f
+  u_FIRP/sub_79/U35/Z (OR2D0)                             0.07       1.67 f
+  u_FIRP/sub_79/U33/Z (OR2D0)                             0.07       1.74 f
+  u_FIRP/sub_79/U31/Z (OR2D0)                             0.07       1.81 f
+  u_FIRP/sub_79/U29/Z (OR2D0)                             0.07       1.88 f
+  u_FIRP/sub_79/U27/Z (OR2D0)                             0.07       1.95 f
+  u_FIRP/sub_79/U25/ZN (NR2D0)                            0.08       2.03 r
+  u_FIRP/sub_79/U23/ZN (ND2D0)                            0.05       2.09 f
+  u_FIRP/sub_79/U21/ZN (NR2D0)                            0.08       2.17 r
+  u_FIRP/sub_79/U19/ZN (ND2D0)                            0.06       2.23 f
+  u_FIRP/sub_79/U15/ZN (NR2D0)                            0.05       2.28 r
+  u_FIRP/sub_79/U14/Z (CKXOR2D0)                          0.09       2.38 r
+  u_FIRP/sub_79/SUM[31] (FIR_Processor_DW01_dec_0)        0.00       2.38 r
+  u_FIRP/U46/Z (AN2D0)                                    0.06       2.43 r
+  u_FIRP/counter_reg[31]/D (DFCNQD1)                      0.00       2.43 r
+  data arrival time                                                  2.43
 
   clock clk (rise edge)                                   5.00       5.00
   clock network delay (ideal)                             0.00       5.00
-  U_delayline/counter_reg[31]/CP (DFCNQD1)                0.00       5.00 r
-  library setup time                                     -0.02       4.98
-  data required time                                                 4.98
+  u_FIRP/counter_reg[31]/CP (DFCNQD1)                     0.00       5.00 r
+  library setup time                                     -0.03       4.97
+  data required time                                                 4.97
   --------------------------------------------------------------------------
-  data required time                                                 4.98
-  data arrival time                                                 -1.94
+  data required time                                                 4.97
+  data arrival time                                                 -2.43
   --------------------------------------------------------------------------
-  slack (MET)                                                        3.05
+  slack (MET)                                                        2.54
 
 
 1

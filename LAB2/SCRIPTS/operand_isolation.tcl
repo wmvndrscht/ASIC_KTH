@@ -22,7 +22,7 @@ elaborate FIR_Toplevel -lib WORK -param "width = 4, filter_taps = 5"
 
 # Wire load
 set_wire_load_mode top
-set_wire_load_selection_group WireAreaLowkCon
+set_wire_load_model -name TSMC8K_Lowk_Conservative
 
 # Operating conditions
 set_operating_conditions -library tcbn90gtc NCCOM
@@ -36,6 +36,9 @@ set_false_path -hold -reset_path -from { rst_n }
 
 # operand isolation
 set do_operand_isolation true
+
+# with saif
+read_saif -input /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/POWER/power_50.saif -instance_name tb_fir
 
 #######Compile Option############
 compile -map_effort medium

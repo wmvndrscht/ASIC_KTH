@@ -1,0 +1,459 @@
+###################################################################
+
+# Created by write_script -format dctcl on Thu Nov 14 16:42:59 2019
+
+###################################################################
+
+# Set the current_design #
+current_design FIR_Processor
+
+set_units -time ns -resistance kOhm -capacitance pF -voltage V -current mA
+set_operating_conditions NCCOM -library tcbn90gtc
+set_wire_load_mode top
+set_wire_load_model -name ZeroWireload -library tcbn90gtc
+set_wire_load_selection_group WireAreaForZero
+set_local_link_library {tcbn90gtc.db}
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports rst_n]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports clk]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports           \
+sample_clk]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports           \
+{sample_delay_in[3]}]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports           \
+{sample_delay_in[2]}]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports           \
+{sample_delay_in[1]}]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports           \
+{sample_delay_in[0]}]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports           \
+{coeficient[3]}]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports           \
+{coeficient[2]}]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports           \
+{coeficient[1]}]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports           \
+{coeficient[0]}]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports           \
+{coef_addr[2]}]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports           \
+{coef_addr[1]}]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports           \
+{coef_addr[0]}]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports dav]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports {outp[3]}]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports {outp[2]}]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports {outp[1]}]
+set_wire_load_model -name ZeroWireload -library tcbn90gtc [get_ports {outp[0]}]
+set_driving_cell -lib_cell LHD1 -library tcbn90gtc -pin Q -from_pin D          \
+-input_transition_rise 0.0754597 -input_transition_fall 0.0500147              \
+-no_design_rule [get_ports {sample_delay_in[3]}]
+set_driving_cell -lib_cell LHD1 -library tcbn90gtc -pin Q -from_pin D          \
+-input_transition_rise 0.0754597 -input_transition_fall 0.0500147              \
+-no_design_rule [get_ports {sample_delay_in[2]}]
+set_driving_cell -lib_cell LHD1 -library tcbn90gtc -pin Q -from_pin D          \
+-input_transition_rise 0.0754597 -input_transition_fall 0.0500147              \
+-no_design_rule [get_ports {sample_delay_in[1]}]
+set_driving_cell -lib_cell LHD1 -library tcbn90gtc -pin Q -from_pin D          \
+-input_transition_rise 0.0754597 -input_transition_fall 0.0500147              \
+-no_design_rule [get_ports {sample_delay_in[0]}]
+set_driving_cell -rise -lib_cell DFCNQD1 -library tcbn90gtc -pin Q -from_pin   \
+CP -no_design_rule [get_ports {coeficient[3]}]
+set_driving_cell -fall -lib_cell DFCNQD1 -library tcbn90gtc -pin Q -from_pin   \
+CDN -input_transition_rise 0.621659 -input_transition_fall 0.373911            \
+-no_design_rule [get_ports {coeficient[3]}]
+set_driving_cell -rise -lib_cell AN2D0 -library tcbn90gtc -pin Z -from_pin A1  \
+-input_transition_rise 0.0772044 -input_transition_fall 0.04612                \
+-no_design_rule [get_ports {coeficient[2]}]
+set_driving_cell -fall -lib_cell AN2D0 -library tcbn90gtc -pin Z -from_pin A2  \
+-input_transition_rise 0.0710133 -input_transition_fall 0.04326                \
+-no_design_rule [get_ports {coeficient[2]}]
+set_driving_cell -rise -lib_cell XNR2D1 -library tcbn90gtc -pin ZN -from_pin   \
+A1 -input_transition_rise 0.0338142 -input_transition_fall 0.0289666           \
+-no_design_rule [get_ports {coeficient[1]}]
+set_driving_cell -fall -lib_cell XNR2D1 -library tcbn90gtc -pin ZN -from_pin   \
+A2 -input_transition_rise 0.0772044 -input_transition_fall 0.04612             \
+-no_design_rule [get_ports {coeficient[1]}]
+set_driving_cell -lib_cell AOI21D0 -library tcbn90gtc -pin ZN -from_pin A1     \
+-input_transition_rise 0.04632 -input_transition_fall 0.0310133                \
+-no_design_rule [get_ports {coeficient[0]}]
+set_connection_class "default" [get_ports rst_n]
+set_connection_class "default" [get_ports clk]
+set_connection_class "default" [get_ports sample_clk]
+set_connection_class "default" [get_ports {sample_delay_in[3]}]
+set_connection_class "default" [get_ports {sample_delay_in[2]}]
+set_connection_class "default" [get_ports {sample_delay_in[1]}]
+set_connection_class "default" [get_ports {sample_delay_in[0]}]
+set_connection_class "default" [get_ports {coeficient[3]}]
+set_connection_class "default" [get_ports {coeficient[2]}]
+set_connection_class "default" [get_ports {coeficient[1]}]
+set_connection_class "default" [get_ports {coeficient[0]}]
+set_connection_class "default" [get_ports {coef_addr[2]}]
+set_connection_class "default" [get_ports {coef_addr[1]}]
+set_connection_class "default" [get_ports {coef_addr[0]}]
+set_connection_class "default" [get_ports dav]
+set_connection_class "default" [get_ports {outp[3]}]
+set_connection_class "default" [get_ports {outp[2]}]
+set_connection_class "default" [get_ports {outp[1]}]
+set_connection_class "default" [get_ports {outp[0]}]
+set_fanout_load 2 [get_ports {coef_addr[2]}]
+set_fanout_load 2 [get_ports {coef_addr[1]}]
+set_fanout_load 3 [get_ports {coef_addr[0]}]
+set_fanout_load 0 [get_ports dav]
+set_fanout_load 0 [get_ports {outp[3]}]
+set_fanout_load 0 [get_ports {outp[2]}]
+set_fanout_load 0 [get_ports {outp[1]}]
+set_fanout_load 0 [get_ports {outp[0]}]
+set_port_fanout_number 86 [get_ports rst_n]
+set_port_fanout_number 72 [get_ports clk]
+set_port_fanout_number 18 [get_ports sample_clk]
+set_port_fanout_number 2 [get_ports {coeficient[3]}]
+set_port_fanout_number 2 [get_ports {coef_addr[2]}]
+set_port_fanout_number 2 [get_ports {coef_addr[1]}]
+set_port_fanout_number 3 [get_ports {coef_addr[0]}]
+set_load -pin_load 0.2257 [get_ports rst_n]
+set_load -pin_load 0.1188 [get_ports clk]
+set_load -pin_load 0.0342 [get_ports sample_clk]
+set_load -pin_load 0.0039 [get_ports {coeficient[3]}]
+set_load -pin_load 0.0027 [get_ports {coef_addr[2]}]
+set_load -pin_load 0.0034 [get_ports {coef_addr[1]}]
+set_load -pin_load 0.005 [get_ports {coef_addr[0]}]
+set_max_capacitance 0.144 [get_ports {sample_delay_in[3]}]
+set_max_capacitance 0.144 [get_ports {sample_delay_in[2]}]
+set_max_capacitance 0.144 [get_ports {sample_delay_in[1]}]
+set_max_capacitance 0.144 [get_ports {sample_delay_in[0]}]
+set_max_capacitance 0.0628 [get_ports {coeficient[2]}]
+set_max_capacitance 0.144 [get_ports {coeficient[1]}]
+set_max_capacitance 0.0369 [get_ports {coeficient[0]}]
+set_max_transition 0.712 [get_ports rst_n]
+set_max_transition 0.712 [get_ports sample_clk]
+set_max_transition 0.712 [get_ports {sample_delay_in[3]}]
+set_max_transition 0.712 [get_ports {sample_delay_in[2]}]
+set_max_transition 0.712 [get_ports {sample_delay_in[1]}]
+set_max_transition 0.712 [get_ports {sample_delay_in[0]}]
+set_max_transition 0.712 [get_ports {coeficient[3]}]
+set_max_transition 0.712 [get_ports {coeficient[2]}]
+set_max_transition 0.712 [get_ports {coeficient[1]}]
+set_max_transition 0.712 [get_ports {coeficient[0]}]
+set_max_transition 0.712 [get_ports {coef_addr[2]}]
+set_max_transition 0.712 [get_ports {coef_addr[1]}]
+set_max_transition 0.712 [get_ports {coef_addr[0]}]
+set_attribute -type string [get_cells C25] roi_cell_sig sub_79
+set_attribute -type string [get_cells C19] roi_cell_sig mult_115
+set_attribute -type string [get_cells C18] roi_cell_sig mult_115
+set_attribute -type string [get_cells C17] roi_cell_sig mult_115
+set_attribute -type string [get_cells C24] roi_cell_sig mult_115
+set_attribute -type string [get_cells C23] roi_cell_sig mult_115
+set_attribute -type string [get_cells C21] roi_cell_sig mult_115
+set_attribute -type string [get_cells C20] roi_cell_sig mult_115
+set_attribute -type string [get_cells C59] roi_cell_sig add_115
+set_attribute -type string [get_cells C64] roi_cell_sig add_115
+set_attribute -type string [get_cells C63] roi_cell_sig add_115
+set_attribute -type string [get_cells C62] roi_cell_sig add_115
+set_attribute -type string [get_cells C61] roi_cell_sig add_115
+set_attribute -type string [get_cells C60] roi_cell_sig add_115
+set_attribute -type string [get_cells C45] roi_cell_sig sub_79
+set_attribute -type string [get_cells C47] roi_cell_sig sub_79
+set_attribute -type string [get_cells C49] roi_cell_sig sub_79
+set_attribute -type string [get_cells C46] roi_cell_sig sub_79
+set_attribute -type string [get_cells C48] roi_cell_sig sub_79
+set_attribute -type string [get_cells C44] roi_cell_sig sub_79
+set_attribute -type string [get_cells C65] roi_cell_sig add_115
+set_attribute -type string [get_cells C55] roi_cell_sig sub_79
+set_attribute -type string [get_cells C53] roi_cell_sig sub_79
+set_attribute -type string [get_cells C39] roi_cell_sig sub_79
+set_attribute -type string [get_cells C43] roi_cell_sig sub_79
+set_attribute -type string [get_cells C50] roi_cell_sig sub_79
+set_attribute -type string [get_cells C51] roi_cell_sig sub_79
+set_attribute -type string [get_cells C41] roi_cell_sig sub_79
+set_attribute -type string [get_cells C40] roi_cell_sig sub_79
+set_attribute -type string [get_cells C52] roi_cell_sig sub_79
+set_attribute -type string [get_cells C38] roi_cell_sig sub_79
+set_attribute -type string [get_cells C42] roi_cell_sig sub_79
+set_attribute -type string [get_cells C22] roi_cell_sig mult_115
+set_attribute -type string [get_cells C58] roi_cell_sig add_115
+set_attribute -type string [get_cells C30] roi_cell_sig sub_79
+set_attribute -type string [get_cells C28] roi_cell_sig sub_79
+set_attribute -type string [get_cells C26] roi_cell_sig sub_79
+set_attribute -type string [get_cells C27] roi_cell_sig sub_79
+set_attribute -type string [get_cells C29] roi_cell_sig sub_79
+set_attribute -type string [get_cells C32] roi_cell_sig sub_79
+set_attribute -type string [get_cells C36] roi_cell_sig sub_79
+set_attribute -type string [get_cells C34] roi_cell_sig sub_79
+set_attribute -type string [get_cells C37] roi_cell_sig sub_79
+set_attribute -type string [get_cells C33] roi_cell_sig sub_79
+set_attribute -type string [get_cells C31] roi_cell_sig sub_79
+set_attribute -type string [get_cells C35] roi_cell_sig sub_79
+set_attribute -type string [get_cells C54] roi_cell_sig sub_79
+set_attribute -type string [get_cells C56] roi_cell_sig sub_79
+set_attribute -type float [get_cells C25] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C19] roi_isolation_gain 15.6214
+set_attribute -type float [get_cells C18] roi_isolation_gain 15.6214
+set_attribute -type float [get_cells C17] roi_isolation_gain 15.6214
+set_attribute -type float [get_cells C24] roi_isolation_gain 15.6214
+set_attribute -type float [get_cells C23] roi_isolation_gain 15.6214
+set_attribute -type float [get_cells C21] roi_isolation_gain 15.6214
+set_attribute -type float [get_cells C20] roi_isolation_gain 15.6214
+set_attribute -type float [get_cells C59] roi_isolation_gain 6.57125
+set_attribute -type float [get_cells C64] roi_isolation_gain 6.57125
+set_attribute -type float [get_cells C63] roi_isolation_gain 6.57125
+set_attribute -type float [get_cells C62] roi_isolation_gain 6.57125
+set_attribute -type float [get_cells C61] roi_isolation_gain 6.57125
+set_attribute -type float [get_cells C60] roi_isolation_gain 6.57125
+set_attribute -type float [get_cells C45] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C47] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C49] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C46] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C48] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C44] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C65] roi_isolation_gain 6.57125
+set_attribute -type float [get_cells C55] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C53] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C39] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C43] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C50] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C51] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C41] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C40] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C52] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C38] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C42] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C22] roi_isolation_gain 15.6214
+set_attribute -type float [get_cells C58] roi_isolation_gain 6.57125
+set_attribute -type float [get_cells C30] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C28] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C26] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C27] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C29] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C32] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C36] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C34] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C37] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C33] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C31] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C35] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C54] roi_isolation_gain 0.162808
+set_attribute -type float [get_cells C56] roi_isolation_gain 0.162808
+set_attribute -type integer [get_cells C25] roi_isolation_style 3
+set_attribute -type integer [get_cells C19] roi_isolation_style 3
+set_attribute -type integer [get_cells C18] roi_isolation_style 3
+set_attribute -type integer [get_cells C17] roi_isolation_style 3
+set_attribute -type integer [get_cells C24] roi_isolation_style 3
+set_attribute -type integer [get_cells C23] roi_isolation_style 3
+set_attribute -type integer [get_cells C21] roi_isolation_style 3
+set_attribute -type integer [get_cells C20] roi_isolation_style 3
+set_attribute -type integer [get_cells C59] roi_isolation_style 3
+set_attribute -type integer [get_cells C64] roi_isolation_style 3
+set_attribute -type integer [get_cells C63] roi_isolation_style 3
+set_attribute -type integer [get_cells C62] roi_isolation_style 3
+set_attribute -type integer [get_cells C61] roi_isolation_style 3
+set_attribute -type integer [get_cells C60] roi_isolation_style 3
+set_attribute -type integer [get_cells C45] roi_isolation_style 3
+set_attribute -type integer [get_cells C47] roi_isolation_style 3
+set_attribute -type integer [get_cells C49] roi_isolation_style 3
+set_attribute -type integer [get_cells C46] roi_isolation_style 3
+set_attribute -type integer [get_cells C48] roi_isolation_style 3
+set_attribute -type integer [get_cells C44] roi_isolation_style 3
+set_attribute -type integer [get_cells C65] roi_isolation_style 3
+set_attribute -type integer [get_cells C55] roi_isolation_style 3
+set_attribute -type integer [get_cells C53] roi_isolation_style 3
+set_attribute -type integer [get_cells C39] roi_isolation_style 3
+set_attribute -type integer [get_cells C43] roi_isolation_style 3
+set_attribute -type integer [get_cells C50] roi_isolation_style 3
+set_attribute -type integer [get_cells C51] roi_isolation_style 3
+set_attribute -type integer [get_cells C41] roi_isolation_style 3
+set_attribute -type integer [get_cells C40] roi_isolation_style 3
+set_attribute -type integer [get_cells C52] roi_isolation_style 3
+set_attribute -type integer [get_cells C38] roi_isolation_style 3
+set_attribute -type integer [get_cells C42] roi_isolation_style 3
+set_attribute -type integer [get_cells C22] roi_isolation_style 3
+set_attribute -type integer [get_cells C58] roi_isolation_style 3
+set_attribute -type integer [get_cells C30] roi_isolation_style 3
+set_attribute -type integer [get_cells C28] roi_isolation_style 3
+set_attribute -type integer [get_cells C26] roi_isolation_style 3
+set_attribute -type integer [get_cells C27] roi_isolation_style 3
+set_attribute -type integer [get_cells C29] roi_isolation_style 3
+set_attribute -type integer [get_cells C32] roi_isolation_style 3
+set_attribute -type integer [get_cells C36] roi_isolation_style 3
+set_attribute -type integer [get_cells C34] roi_isolation_style 3
+set_attribute -type integer [get_cells C37] roi_isolation_style 3
+set_attribute -type integer [get_cells C33] roi_isolation_style 3
+set_attribute -type integer [get_cells C31] roi_isolation_style 3
+set_attribute -type integer [get_cells C35] roi_isolation_style 3
+set_attribute -type integer [get_cells C54] roi_isolation_style 3
+set_attribute -type integer [get_cells C56] roi_isolation_style 3
+set_attribute -type boolean [get_pins C25/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C19/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C18/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C17/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C24/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C23/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C21/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C20/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C59/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C64/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C63/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C62/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C61/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C60/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C45/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C47/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C49/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C46/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C48/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C44/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C65/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C55/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C53/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C39/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C43/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C50/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C51/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C41/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C40/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C52/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C38/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C42/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C22/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C58/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C30/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C28/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C26/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C27/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C29/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C32/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C36/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C34/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C37/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C33/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C31/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C35/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C54/A1] roi_orig_data true
+set_attribute -type boolean [get_pins C56/A1] roi_orig_data true
+set_size_only [get_cells C25] true
+set_size_only [get_cells C19] true
+set_size_only [get_cells C18] true
+set_size_only [get_cells C17] true
+set_size_only [get_cells C24] true
+set_size_only [get_cells C23] true
+set_size_only [get_cells C21] true
+set_size_only [get_cells C20] true
+set_size_only [get_cells C59] true
+set_size_only [get_cells C64] true
+set_size_only [get_cells C63] true
+set_size_only [get_cells C62] true
+set_size_only [get_cells C61] true
+set_size_only [get_cells C60] true
+set_size_only [get_cells C45] true
+set_size_only [get_cells C47] true
+set_size_only [get_cells C49] true
+set_size_only [get_cells C46] true
+set_size_only [get_cells C48] true
+set_size_only [get_cells C44] true
+set_size_only [get_cells C65] true
+set_size_only [get_cells C55] true
+set_size_only [get_cells C53] true
+set_size_only [get_cells C39] true
+set_size_only [get_cells C43] true
+set_size_only [get_cells C50] true
+set_size_only [get_cells C51] true
+set_size_only [get_cells C41] true
+set_size_only [get_cells C40] true
+set_size_only [get_cells C52] true
+set_size_only [get_cells C38] true
+set_size_only [get_cells C42] true
+set_size_only [get_cells C22] true
+set_size_only [get_cells C58] true
+set_size_only [get_cells C30] true
+set_size_only [get_cells C28] true
+set_size_only [get_cells C26] true
+set_size_only [get_cells C27] true
+set_size_only [get_cells C29] true
+set_size_only [get_cells C32] true
+set_size_only [get_cells C36] true
+set_size_only [get_cells C34] true
+set_size_only [get_cells C37] true
+set_size_only [get_cells C33] true
+set_size_only [get_cells C31] true
+set_size_only [get_cells C35] true
+set_size_only [get_cells C54] true
+set_size_only [get_cells C56] true
+set_switching_activity -period 1 -toggle_rate 0.0153259 -static_probability    \
+0.276199 [get_pins dav_wire_reg/QN]
+set_switching_activity -period 1 -toggle_rate 0.0576233 -static_probability    \
+0.140259 [get_pins {counter_reg[0]/QN}]
+set_switching_activity -period 1 -toggle_rate 0.0194397 -static_probability    \
+0.143463 [get_pins {counter_reg[2]/QN}]
+set_switching_activity -period 1 -toggle_rate 0 -static_probability 0          \
+[get_pins add_115/CO]
+create_clock [get_ports clk]  -period 5  -waveform {0 2.5}
+create_clock -name port_clock_virtual1  -period 5  -waveform {0 2.5}
+group_path -default  -to [get_clocks port_clock_virtual1]
+set_false_path   -from [get_clocks port_clock_virtual1]
+set_input_delay -clock clk  -rise 0  [get_ports clk]
+set_input_delay -clock clk  -clock_fall  -fall 0  -add_delay  [get_ports clk]
+set_input_delay -clock clk  -max -rise 0.199507  [get_ports {coeficient[0]}]
+set_input_delay -clock clk  -max -fall 0.179874  [get_ports {coeficient[0]}]
+set_input_delay -clock clk  -min -rise 0.14849  [get_ports {coeficient[0]}]
+set_input_delay -clock clk  -min -fall 0.146386  [get_ports {coeficient[0]}]
+set_input_delay -clock clk  -max -rise 0.225691  [get_ports {coeficient[1]}]
+set_input_delay -clock clk  -max -fall 0.224772  [get_ports {coeficient[1]}]
+set_input_delay -clock clk  -min -rise 0.195822  [get_ports {coeficient[1]}]
+set_input_delay -clock clk  -min -fall 0.192999  [get_ports {coeficient[1]}]
+set_input_delay -clock clk  -max -rise 0.19662  [get_ports {coeficient[2]}]
+set_input_delay -clock clk  -max -fall 0.188947  [get_ports {coeficient[2]}]
+set_input_delay -clock clk  -min -rise 0.191595  [get_ports {coeficient[2]}]
+set_input_delay -clock clk  -min -fall 0.186587  [get_ports {coeficient[2]}]
+set_input_delay -clock clk  -rise 0.109487  [get_ports {coeficient[3]}]
+set_input_delay -clock clk  -fall 0.105712  [get_ports {coeficient[3]}]
+set_input_delay -level_sensitive  -max -rise 0.0876022  [get_ports             \
+{sample_delay_in[0]}]
+set_input_delay -level_sensitive  -max -fall 0.073214  [get_ports              \
+{sample_delay_in[0]}]
+set_input_delay -level_sensitive  -min -rise 0.0866969  [get_ports             \
+{sample_delay_in[0]}]
+set_input_delay -level_sensitive  -min -fall 0.0723219  [get_ports             \
+{sample_delay_in[0]}]
+set_input_delay -level_sensitive  -max -rise 0.0876022  [get_ports             \
+{sample_delay_in[1]}]
+set_input_delay -level_sensitive  -max -fall 0.073214  [get_ports              \
+{sample_delay_in[1]}]
+set_input_delay -level_sensitive  -min -rise 0.0866969  [get_ports             \
+{sample_delay_in[1]}]
+set_input_delay -level_sensitive  -min -fall 0.0723219  [get_ports             \
+{sample_delay_in[1]}]
+set_input_delay -level_sensitive  -max -rise 0.0876022  [get_ports             \
+{sample_delay_in[2]}]
+set_input_delay -level_sensitive  -max -fall 0.073214  [get_ports              \
+{sample_delay_in[2]}]
+set_input_delay -level_sensitive  -min -rise 0.0866969  [get_ports             \
+{sample_delay_in[2]}]
+set_input_delay -level_sensitive  -min -fall 0.0723219  [get_ports             \
+{sample_delay_in[2]}]
+set_input_delay -level_sensitive  -max -rise 0.0876022  [get_ports             \
+{sample_delay_in[3]}]
+set_input_delay -level_sensitive  -max -fall 0.073214  [get_ports              \
+{sample_delay_in[3]}]
+set_input_delay -level_sensitive  -min -rise 0.0866969  [get_ports             \
+{sample_delay_in[3]}]
+set_input_delay -level_sensitive  -min -fall 0.0723219  [get_ports             \
+{sample_delay_in[3]}]
+set_input_delay 0  [get_ports sample_clk]
+set_input_delay -clock port_clock_virtual1  0  [get_ports rst_n]
+set_output_delay 0  [get_ports {outp[0]}]
+set_output_delay 0  [get_ports {outp[1]}]
+set_output_delay 0  [get_ports {outp[2]}]
+set_output_delay 0  [get_ports {outp[3]}]
+set_output_delay 0  [get_ports dav]
+set_output_delay -clock clk  -max -rise 0.927022  [get_ports {coef_addr[0]}]
+set_output_delay -clock clk  -max -fall 0.92057  [get_ports {coef_addr[0]}]
+set_output_delay -clock clk  -min -rise 0.249113  [get_ports {coef_addr[0]}]
+set_output_delay -clock clk  -min -fall 0.312158  [get_ports {coef_addr[0]}]
+set_output_delay -clock clk  -max -rise 0.930403  [get_ports {coef_addr[1]}]
+set_output_delay -clock clk  -max -fall 0.938081  [get_ports {coef_addr[1]}]
+set_output_delay -clock clk  -min -rise 0.320506  [get_ports {coef_addr[1]}]
+set_output_delay -clock clk  -min -fall 0.2755  [get_ports {coef_addr[1]}]
+set_output_delay -clock clk  -max -rise 0.821976  [get_ports {coef_addr[2]}]
+set_output_delay -clock clk  -max -fall 0.871229  [get_ports {coef_addr[2]}]
+set_output_delay -clock clk  -min -rise 0.247208  [get_ports {coef_addr[2]}]
+set_output_delay -clock clk  -min -fall 0.292175  [get_ports {coef_addr[2]}]
+1

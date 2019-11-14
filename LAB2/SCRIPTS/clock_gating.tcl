@@ -22,7 +22,7 @@ elaborate FIR_Toplevel -lib WORK -param "width = 4, filter_taps = 5"
 
 # Wire load
 set_wire_load_mode top
-set_wire_load_selection_group WireAreaLowkCon
+get_wire_load_model -name TSMC8K_Lowk_Conservative
 
 # Operating conditions
 set_operating_conditions -library tcbn90gtc NCCOM

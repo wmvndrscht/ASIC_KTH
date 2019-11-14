@@ -1,3 +1,4 @@
+remove_design -all
 ####### Set Global Libraries #########
 source /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/synopsys_dc.setup
 ####### Set Directary #########
@@ -22,7 +23,7 @@ elaborate FIR_Toplevel -lib WORK -param "width = 4, filter_taps = 5"
 
 # Wire load
 set_wire_load_mode top
-set_wire_load_selection_group WireAreaLowkCon
+get_wire_load_model -name TSMC8K_Lowk_Conservative
 
 # Operating conditions
 set_operating_conditions -library tcbn90gtc NCCOM
@@ -36,14 +37,17 @@ set_false_path -hold -reset_path -from { rst_n }
 
 
 # clock gating
-set_clock_gating_style -sequential_cell latch
+#set_clock_gating_style -sequential_cell latch
 
 # operand isolation
-set do_operand_isolation true
+#set do_operand_isolation true
+
+# with saif
+#read_saif -input /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/POWER/power_50.saif -instance_name tb_fir
 
 #######Compile Option############
-compile -map_effort medium -gate_clock
-
+#compile -map_effort medium -gate_clock
+compile -map_effort medium
 #######Save Design####################
 write_sdc /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/constraints.sdc
 write_sdf /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/delays.sdf
@@ -54,4 +58,4 @@ write -format verilog -hier -o /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/
 report_timing > /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/REPORTS/report_timing.rpt
 report_area > /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/REPORTS/report_area.rpt
 report_cell > /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/REPORTS/report_cell.rpt
-report_power > /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/REPORTS/report_power.rpt
+report_power > /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/REPORTS/report_power_nosaif.rpt

@@ -1208,6 +1208,13 @@ Top level modules:
 	XOR4D2
 	XOR4D4
 
+} {} {}} /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/misc.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/misc.vhd
+QuestaSim vcom 10.5c_4 Compiler 2016.11 Nov 30 2016
+-- Loading package STANDARD
+-- Compiling package misc
+-- Compiling package body misc
+-- Loading package misc
+
 } {} {}} /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/SOURCE/tb_FIR.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/SOURCE/tb_FIR.vhd
 QuestaSim vcom 10.5c_4 Compiler 2016.11 Nov 30 2016
 -- Loading package STANDARD
@@ -1218,28 +1225,5 @@ QuestaSim vcom 10.5c_4 Compiler 2016.11 Nov 30 2016
 -- Loading package MATH_REAL
 -- Compiling entity tb_FIR
 -- Compiling architecture tb_FIR_behavioural of tb_FIR
-
-} {} {}} /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/misc.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/misc.vhd
-QuestaSim vcom 10.5c_4 Compiler 2016.11 Nov 30 2016
--- Loading package STANDARD
--- Compiling package misc
--- Compiling package body misc
--- Loading package misc
-
-} {} {}} /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v {1 {vlog -work work -vopt -stats=none /afs/kth.se/home/w/v/wvds/IL2225_LAB/LAB2/MAPPED/main.v
-QuestaSim vlog 10.5c_4 Compiler 2016.11 Nov 30 2016
--- Compiling module SRAM
--- Compiling module Delayline_CB_DW01_inc_0
--- Compiling module Delayline_CB_DW01_dec_0
--- Compiling module Delayline_CB
--- Compiling module FIR_Processor_DW01_dec_0
--- Compiling module FIR_Processor_DW_mult_uns_0
--- Compiling module FIR_Processor_DW01_add_0
--- Compiling module FIR_Processor
--- Compiling module ROM_Process
--- Compiling module FIR_Toplevel_5
-
-Top level modules:
-	FIR_Toplevel_5
 
 } {} {}}
