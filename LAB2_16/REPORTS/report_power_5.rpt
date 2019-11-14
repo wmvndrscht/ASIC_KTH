@@ -1,14 +1,16 @@
 Loading db file '/afs/it.kth.se/pkg/synopsys/extra_libraries/standard_cell/TSMC/tcbn90g_110a/Front_End/timing_power/tcbn90g_110a/tcbn90gtc.db'
 Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: The derived static probability value (0.500000) for the clock net 'clk' conflicts with the annotated value (0.484536). Using the annotated value. (PWR-12)
+Warning: The derived toggle rate value (0.400000) for the clock net 'clk' conflicts with the annotated value (0.206186). Using the annotated value. (PWR-12)
 Warning: Design has unannotated primary inputs. (PWR-414)
 Warning: Design has unannotated sequential cell outputs. (PWR-415)
  
 ****************************************
 Report : power
         -analysis_effort low
-Design : FIR_Toplevel_16_5
+Design : FIR_Toplevel_5
 Version: J-2014.09
-Date   : Thu Nov 14 13:04:14 2019
+Date   : Thu Nov 14 13:28:09 2019
 ****************************************
 
 
@@ -18,12 +20,26 @@ Library(s) Used:
 
 
 Operating Conditions: NCCOM   Library: tcbn90gtc
-Wire Load Model Mode: top
+Wire Load Model Mode: segmented
 
 Design        Wire Load Model            Library
 ------------------------------------------------
-FIR_Toplevel_16_5      TSMC8K_Lowk_Conservative
+FIR_Toplevel_5         TSMC8K_Lowk_Conservative
                                          tcbn90gtc
+Delayline_CB           ZeroWireload      tcbn90gtc
+FIR_Processor          ZeroWireload      tcbn90gtc
+ROM_Process            ZeroWireload      tcbn90gtc
+SRAM                   ZeroWireload      tcbn90gtc
+FIR_Processor_DW01_dec_0
+                       ZeroWireload      tcbn90gtc
+Delayline_CB_DW01_inc_0
+                       ZeroWireload      tcbn90gtc
+Delayline_CB_DW01_dec_0
+                       ZeroWireload      tcbn90gtc
+FIR_Processor_DW01_add_0
+                       ZeroWireload      tcbn90gtc
+FIR_Processor_DW_mult_uns_0
+                       ZeroWireload      tcbn90gtc
 
 
 Global Operating Voltage = 1    
@@ -35,12 +51,12 @@ Power-specific unit information :
     Leakage Power Units = 1nW
 
 
-  Cell Internal Power  = 521.9700 uW   (90%)
-  Net Switching Power  =  59.1815 uW   (10%)
+  Cell Internal Power  = 397.9180 uW   (86%)
+  Net Switching Power  =  67.1572 uW   (14%)
                          ---------
-Total Dynamic Power    = 581.1514 uW  (100%)
+Total Dynamic Power    = 465.0753 uW  (100%)
 
-Cell Leakage Power     =  23.7280 uW
+Cell Leakage Power     =  24.7889 uW
 
 
                  Internal         Switching           Leakage            Total
@@ -50,9 +66,9 @@ io_pad             0.0000            0.0000            0.0000            0.0000 
 memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
 black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
-register           0.4527        5.7390e-03        4.1870e+03            0.4626  (  76.48%)
-sequential     2.4074e-02        1.1367e-03        2.0341e+03        2.7245e-02  (   4.50%)
-combinational  4.5191e-02        5.2306e-02        1.7507e+04            0.1150  (  19.01%)
+register           0.2606        4.2575e-03        4.9566e+03            0.2698  (  55.07%)
+sequential     1.0233e-02        1.5258e-03        2.0381e+03        1.3797e-02  (   2.82%)
+combinational      0.1271        6.1374e-02        1.7794e+04            0.2063  (  42.11%)
 --------------------------------------------------------------------------------------------------
-Total              0.5220 mW     5.9182e-02 mW     2.3728e+04 nW         0.6049 mW
+Total              0.3979 mW     6.7157e-02 mW     2.4789e+04 nW         0.4899 mW
 1

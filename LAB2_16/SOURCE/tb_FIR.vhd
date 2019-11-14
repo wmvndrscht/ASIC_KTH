@@ -14,19 +14,19 @@ architecture tb_FIR_behavioural of tb_FIR is
   constant width      : positive := 16;
 
   --Name of this will depend on synthesis -> FIR_Toplevel_x_x
-  component FIR_Toplevel_4_5
+  component FIR_Toplevel_16_5
     port (rst_n      : in std_logic;
           clk        : in std_logic;
           sample_clk : in std_logic;
-          sample     : in std_logic_vector(3 downto 0);
+          sample     : in std_logic_vector(width-1 downto 0);
           dav  : out std_logic;
-          outp : out std_logic_vector(3 downto 0)
+          outp : out std_logic_vector(width-1 downto 0)
           );
   end component;
 
   signal clk, sample_clk        : std_logic := '0';
   signal rst_n, dav_wire        : std_logic;
-  signal sample_wire, outp_wire : std_logic_vector(3 downto 0);
+  signal sample_wire, outp_wire : std_logic_vector(width-1 downto 0);
 
 begin
 
@@ -56,7 +56,7 @@ begin
     VARIABLE a_real: real;
     VARIABLE count :INTEGER:=0;
     --Addition of this variable
-    VARIABLE number_of_samples:INTEGER:=10;
+    VARIABLE number_of_samples:INTEGER:=50000;
 
   begin
 
@@ -72,7 +72,7 @@ begin
   end process random_generator;
 
   --Name of this will depend on synthesis -> FIR_Toplevel_x_x
-  u1 : FIR_Toplevel_4_5 port map(rst_n,
+  u1 : FIR_Toplevel_16_5 port map(rst_n,
                            clk,
                            sample_clk,
                            sample_wire,

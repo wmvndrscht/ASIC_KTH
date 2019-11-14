@@ -1,9 +1,9 @@
  
 ****************************************
 Report : cell
-Design : FIR_Toplevel_4_5
+Design : FIR_Toplevel_5
 Version: J-2014.09
-Date   : Wed Nov 13 18:03:03 2019
+Date   : Thu Nov 14 13:30:21 2019
 ****************************************
 
 Attributes:
@@ -15,11 +15,11 @@ Attributes:
 
 Cell                      Reference       Library             Area  Attributes
 --------------------------------------------------------------------------------
-U_delayline               Delayline_CB                    2773.209641
+U_delayline               Delayline_CB                    3999.744050
                                                                     h, n
-u_FIRP                    FIR_Processor                   1703.116809
+u_FIRP                    FIR_Processor                   7047.129650
                                                                     h, n
 u_ROM                     ROM_Process                     16.128000 h
 --------------------------------------------------------------------------------
-Total 3 cells                                             4492.454450
+Total 3 cells                                             11063.001700
 1
